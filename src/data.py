@@ -63,7 +63,7 @@ class asassn_catalog(dict):
 	See documentation of built-in type ``dict`` for more information.
 	"""
 	def __init__(self):
-		with open("%s/data/SNIA_with_weights.csv" % (PATH), 'r') as f:
+		with open("%s/data/SNIa_with_weights.csv" % (PATH), 'r') as f:
 			raw = []
 			while True:
 				line = f.readline()
