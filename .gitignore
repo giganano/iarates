@@ -4,3 +4,5 @@ iarates.sublime-project
 notebooks/.ipynb_checkpoints/*
 notebooks/.ipynb_checkpoints
 
+src/data/umachine-dr1/*
+

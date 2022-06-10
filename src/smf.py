@@ -4,12 +4,13 @@ Stellar mass functions.
 
 __all__ = ["baldry12", "bell03"]
 from .utils import schechter_function
+import math as m
 
 class bell03(schechter_function):
 
 	def __init__(self):
 		# super().__init__(0.0102, 10**10.70, -1.10) # g-band
-		super().__init__(0.133, 10**10.63, -0.86) # K-band
+		super().__init__(0.0133, 10**10.63, -0.86) # K-band
 
 class baldry12:
 
