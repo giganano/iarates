@@ -98,6 +98,7 @@ def plaw_dtd(lookback, plaw_index = -1, delay = 0.15):
 def relative_ia_rate(log_stellar_mass, dtd = plaw_dtd, Z = 0.014,
 	Zscaling_plaw_index = 0):
 	lookbacks = np.linspace(0, 13.2, 1001)
+	# lookbacks = _UMACHINE_SFHS_[_MASSES_[0]]["lookback"]
 	sfh = umachine_sfh(log_stellar_mass)
 	ria = 0
 	for i in range(len(lookbacks) - 1):
