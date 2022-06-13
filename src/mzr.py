@@ -51,7 +51,7 @@ class am2013:
 
 	def __call__(self, mass):
 		mto = 10**self._logmto
-		logohplus12 = self._logplus12oh_asm - m.log10(1 + 
+		logohplus12 = self._logplus12oh_asm - m.log10(1 +
 			(mto / mass)**self._gamma)
 		return logplus12_bracket_conversion(logohplus12)
 		# return logohplus12
