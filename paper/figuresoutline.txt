@@ -1,0 +1,52 @@
+
+The Specific Type Ia Supernova Rate: A Tale of Star Formation Histories,
+Binary Fractions, and Metallicity
+
+1. 2 panel figure
+
+	left: Specific Ia rate as a function of \tau_sfh, the e-folding timescale
+	of the SFH, taken from an order of magnitude calculation assuming an
+	exponential SN Ia DTD and an exponential SFH.
+
+		Main point of the story is that the specific Ia rate increases when
+		the star formation history is extended. The DTD is extended, but not
+		so extended that SNe will occur in significant amounts even after star
+		formation stops. With the specific Ia rate known to increase at low
+		stellar masses, this is an effect of the right sign.
+
+	right: SFHs at a few representative masses taken from the universe machine
+	catalog.
+
+		Main point here is to demonstrate more quantitatively that low mass
+		field galaxies have more extended SFHs.
+
+2. Analytic curves for specific Ia rate as a function of stellar mass
+	given the universe machine SFHs and the Andrews & Martini (2013)
+	mass-metallicity relation assuming different indeces for the power-law
+	Z-dependence
+
+	Main point is that if the scaling goes as ~M^-0.3 as Gandhi et al. (2022)
+	suggests, then this can be explained by a Z^-0.5 scaling.
+
+3. Power-law index of Z-dependence on the y-axis and power-law index of
+	mass dependence on the x-axis, showing how much power in Z you need for a
+	given scaling in mass if you believe the universe machine SFHs and the
+	Andrews & Martini (2013) mass-metallicity relation.
+
+	Inset showing a sampled version of the specific Ia rates, with the main
+	point being that even though we don't get power-laws in our analytic
+	forms, they would look like power-laws if sampled by an ASAS-SN-like
+	survey.
+
+4. Binary fraction as a function of Z taken from Moe, Kratter & Badenes (2019)
+	with various scalings of Z overlapped, and a vertical line at
+	log10(Z/Zsun) = -1.08 (the metallicity of the lowest mass galaxies
+	probed by our study).
+
+	Main point is that a Z^-0.5 scaling generally lines up with their
+	measurements, but is a *tad* higher at the lowest masses and metallicities
+	that we consider. This suggests that the majority of the specific Ia rate
+	effect can be explained with the increased binary fraction at low Z, but
+	that at the lowest masses and metallicities, there may be an additional
+	effect if the specific Ia rate continues to increase.
+
