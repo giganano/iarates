@@ -10,6 +10,6 @@ src/data/umachine-dr1/*
 *.bbl
 *.blg
 *.log
-paper/*.out
+*.out
 
 

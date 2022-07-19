@@ -1,0 +1,68 @@
+
+\documentclass[fleqn, usenatbib]{mnras}
+\usepackage{newtxtext, newtxmath} 	% Required for MNRAS
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage{bm}
+\usepackage{pdflscape}
+\usepackage{natbib}
+\usepackage[section]{placeins}
+\usepackage{lipsum}
+\usepackage{etoolbox}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[toc, page]{appendix}
+\usepackage{subfiles}
+\usepackage{geometry}
+% \hypersetup{draft}
+% \linespread{1.8}
+\hypersetup{ % all blue links
+	colorlinks		= true,
+	urlcolor 		= blue,
+	linkcolor 		= blue,
+	citecolor 		= blue
+}
+
+\providecommand{\noopsort}[1]{}
+
+\title[Type Ia Supernova Rates]{Type Ia Supernova Rates: A Tale of Star
+Formation Histories, Binary Fractions, and Metallicity}
+
+\author[J.W. Johnson, C.S. Kochanek \& K.Z. Stanek]{
+	James W. Johnson,$^{1, 2}$\thanks{
+		Contact e-mail: \href{mailto:johnson.7419@osu.edu}{johnson.7419@osu.edu}
+	}
+	Christopher S. Kochanek,$^{1, 2}$ and
+	Krzysztof Z. Stanek$^{1, 2}$
+	\\ \null \\
+	$^{1}$ Department of Astronomy, The Ohio State University,
+	140 W. 18th Ave., Columbus, OH, 43210, USA
+	\\
+	$^{2}$ Center for Cosmology and Astroparticle Physics (CCAPP),
+	The Ohio State University, 191 W. Woodruff Ave., Columbus, OH, 43210, USA
+}
+
+\date{Accepted XXX; Received YYY; in original form ZZZ}
+\pubyear{2022}
+
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+\begin{keywords}
+methods: numerical -- galaxies: abundances -- galaxies: evolution --
+galaxies: star formation -- galaxies: stellar content
+\end{keywords}
+
+\subfile{intro.tex}
+\subfile{sfhs.tex}
+
+\bibliographystyle{mnras}
+\bibliography{ms}
+
+\label{lastpage}
+\end{document}
