@@ -6,3 +6,10 @@ notebooks/.ipynb_checkpoints
 
 src/data/umachine-dr1/*
 
+*.aux
+*.bbl
+*.blg
+*.log
+paper/*.out
+
+

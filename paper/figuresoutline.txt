@@ -20,25 +20,33 @@ Binary Fractions, and Metallicity
 		Main point here is to demonstrate more quantitatively that low mass
 		field galaxies have more extended SFHs.
 
-2. Analytic curves for specific Ia rate as a function of stellar mass
-	given the universe machine SFHs and the Andrews & Martini (2013)
-	mass-metallicity relation assuming different indeces for the power-law
-	Z-dependence
+2. 3 panel figure
 
-	Main point is that if the scaling goes as ~M^-0.3 as Gandhi et al. (2022)
-	suggests, then this can be explained by a Z^-0.5 scaling.
+	left: Analytic curves for specific Ia rate as a function of stellar mass
+		given the universe machine SFHs and the Andrews & Martini (2013)
+		mass-metallicity relation assuming different indeces for the power-law
+		Z-dependence
 
-3. Power-law index of Z-dependence on the y-axis and power-law index of
-	mass dependence on the x-axis, showing how much power in Z you need for a
+		Main point is that if the scaling goes as ~M^-0.3 as Gandhi et al.
+		(2022) suggests, then this can be explained by a ~Z^-0.5 scaling.
+
+	middle: A sampled version of the left panel.
+
+		Main point is that even though we don't get power-laws in our analytic
+		forms, they would look like power-laws if sampled by an ASAS-SN-like
+		survey.
+
+	right: Power-law index of Z-dependence on the y-axis and power-law index
+	of mass-dependence on the x-axis, showing how much power in Z you need for a
 	given scaling in mass if you believe the universe machine SFHs and the
 	Andrews & Martini (2013) mass-metallicity relation.
 
-	Inset showing a sampled version of the specific Ia rates, with the main
-	point being that even though we don't get power-laws in our analytic
-	forms, they would look like power-laws if sampled by an ASAS-SN-like
-	survey.
+		Main point is just to show the relationship between the massdependence
+		and the metallicity dependence required to produce that in a little
+		more detail.
 
-4. Binary fraction as a function of Z taken from Moe, Kratter & Badenes (2019)
+
+3. Binary fraction as a function of Z taken from Moe, Kratter & Badenes (2019)
 	with various scalings of Z overlapped, and a vertical line at
 	log10(Z/Zsun) = -1.08 (the metallicity of the lowest mass galaxies
 	probed by our study).
