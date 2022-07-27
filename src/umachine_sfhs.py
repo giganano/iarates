@@ -2,6 +2,7 @@
 from astropy.cosmology import Planck13 as cosmo
 import numpy as np
 import numbers
+import vice
 import os
 
 _PATH_ = "%s/data/umachine-dr1/data/sfhs" % (
@@ -96,16 +97,21 @@ def plaw_dtd(lookback, plaw_index = -1, delay = 0.15):
 
 
 def relative_ia_rate(log_stellar_mass, dtd = plaw_dtd, Z = 0.014,
-	Zscaling_plaw_index = 0):
-	# print("gamma = %g" % (Zscaling_plaw_index))
-	lookbacks = np.linspace(0, 13.2, 1001)
-	# lookbacks = _UMACHINE_SFHS_[_MASSES_[0]]["lookback"]
+	Zscaling_plaw_index = 0, z = 0):
+	# lookbacks = np.linspace(0, 13.2, 1001)
+	minlookback = cosmo.lookback_time(z).value
+	lookbacks = np.linspace(minlookback, 13.2, 1001)
 	sfh = umachine_sfh(log_stellar_mass)
 	ria = 0
+	mstar = 0
 	for i in range(len(lookbacks) - 1):
-		ria += (Z / 0.014)**Zscaling_plaw_index * plaw_dtd(lookbacks[i]) * sfh(
-			lookbacks[i]) * (lookbacks[i + 1] - lookbacks[i])
-	return ria
+		ria += (Z / 0.014)**Zscaling_plaw_index * plaw_dtd(
+			lookbacks[i] - minlookback) * sfh(
+			lookbacks[i]) * (lookbacks[i + 1] - lookbacks[i]) * 1.e9
+		mstar += 1.e9 * sfh(lookbacks[i]) * (1 -
+			vice.cumulative_return_fraction(lookbacks[i])) * (
+			lookbacks[i + 1] - lookbacks[i])
+	return ria, mstar
 
 
 # if __name__ == "__main__":
