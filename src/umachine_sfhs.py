@@ -41,12 +41,13 @@ class umachine_sfh:
 		mass_bin = get_bin_number(self.log_stellar_mass, _MASSES_)
 		time_bin = get_bin_number(lookback,
 			_UMACHINE_SFHS_[_MASSES_[mass_bin]]["lookback"])
-		return umachine_sfh._2d_interpolation(lookback, self.log_stellar_mass,
-			# x-coordinate is lookback time
+		return umachine_sfh._2d_interpolation(10**self.log_stellar_mass,
+			lookback,
+			# x-coordinate is stellar mass
+			[10**_MASSES_[mass_bin], 10**_MASSES_[mass_bin + 1]],
+			# y-coordinate is lookback time
 			[_UMACHINE_SFHS_[_MASSES_[mass_bin]]["lookback"][time_bin],
 			_UMACHINE_SFHS_[_MASSES_[mass_bin]]["lookback"][time_bin + 1]],
-			# y-coordinate is log stellar mass
-			[_MASSES_[mass_bin], _MASSES_[mass_bin + 1]],
 			# z-coordinate is the SFHs
 			[
 				[_UMACHINE_SFHS_[_MASSES_[mass_bin]]["sfh_all"][time_bin],
@@ -105,11 +106,10 @@ def relative_ia_rate(log_stellar_mass, dtd = plaw_dtd, Z = 0.014,
 	ria = 0
 	mstar = 0
 	for i in range(len(lookbacks) - 1):
-		ria += (Z / 0.014)**Zscaling_plaw_index * plaw_dtd(
+		ria += (Z / 0.014)**Zscaling_plaw_index * dtd(
 			lookbacks[i] - minlookback) * sfh(
 			lookbacks[i]) * (lookbacks[i + 1] - lookbacks[i]) * 1.e9
-		mstar += 1.e9 * sfh(lookbacks[i]) * (1 -
-			vice.cumulative_return_fraction(lookbacks[i])) * (
+		mstar += 1.e9 * sfh(lookbacks[i]) * (
 			lookbacks[i + 1] - lookbacks[i])
 	return ria, mstar
 
