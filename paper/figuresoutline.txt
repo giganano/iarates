@@ -12,49 +12,72 @@ Binary Fractions, and Metallicity
 		the star formation history is extended. The DTD is extended, but not
 		so extended that SNe will occur in significant amounts even after star
 		formation stops. With the specific Ia rate known to increase at low
-		stellar masses, this is an effect of the right sign.
+		stellar masses, this is an effect of the right sign, but the question
+		is if it can account for the whole effect.
 
 	right: SFHs at a few representative masses taken from the universe machine
 	catalog.
 
 		Main point here is to demonstrate more quantitatively that low mass
-		field galaxies have more extended SFHs.
+		field galaxies have more extended SFHs, which is supporting to the
+		points made regarding the left-hand panel.
 
-2. 3 panel figure
+2. 2 panel figure
 
 	left: Analytic curves for specific Ia rate as a function of stellar mass
-		given the universe machine SFHs and the Andrews & Martini (2013)
-		mass-metallicity relation assuming different indeces for the power-law
-		Z-dependence
+		given the universe machine SFHs and the z = 0 mass-metallicity relation
+		from Zahid et al. (2014) assuming different indeces for the power-law
+		Z-dependence.
 
 		Main point is that if the scaling goes as ~M^-0.3 as Gandhi et al.
 		(2022) suggests, then this can be explained by a ~Z^-0.5 scaling.
+		The stronger ~M^-0.5 scaling found by Brown et al. (2019) requires
+		an even stronger scaling of ~Z^-1.
 
-	middle: A sampled version of the left panel.
+	right: Binary fraction as a function of Z taken from Moe, Kratter &
+	Badenes (2019) with various scalings of Z overlapped, and a vertical
+	line at log10(Z/Zsun) = -1.08 (the metallicity of the lowest mass
+	galaxies probed by our study).
 
-		Main point is that even though we don't get power-laws in our analytic
-		forms, they would look like power-laws if sampled by an ASAS-SN-like
-		survey.
+		Main point is that a Z^-0.5 scaling generally lines up with their
+		measurements, but is a *tad* higher at the lowest masses and
+		metallicities that we consider. This suggests that the majority of the
+		specific Ia rate effect can be explained with the increased binary
+		fraction at low Z, but that at the lowest masses and metallicities,
+		there may be an additional effect if the specific Ia rate continues to
+		increase. Some additional Ia's could be explained at low metallicity
+		due to the higher mass white dwarfs.
 
-	right: Power-law index of Z-dependence on the y-axis and power-law index
-	of mass-dependence on the x-axis, showing how much power in Z you need for a
-	given scaling in mass if you believe the universe machine SFHs and the
-	Andrews & Martini (2013) mass-metallicity relation.
+	Taken together, these figures imply that the entire specific Ia rate
+	increase at low stellar masses can be understood from some contribution
+	from the more extended SFHs of low-mass galaxies and the fact that the
+	overall binary fraction should be higher due to their low metallicity.
 
-		Main point is just to show the relationship between the massdependence
-		and the metallicity dependence required to produce that in a little
-		more detail.
+3. Single panel figure
 
+	Analytic curves similar to the left-hand panel but at a range of
+	redshift and assuming either no Z-dependence or a Z^-0.5 scaling.
 
-3. Binary fraction as a function of Z taken from Moe, Kratter & Badenes (2019)
-	with various scalings of Z overlapped, and a vertical line at
-	log10(Z/Zsun) = -1.08 (the metallicity of the lowest mass galaxies
-	probed by our study).
+		If the specific Ia rate can be probed out to z ~ 1, an observational
+		test of metallicity versus non-metallicity dependent Ia rates is whether
+		or not the mass trend picks up a slope inversion somewhere between z = 0
+		and z = 1.
 
-	Main point is that a Z^-0.5 scaling generally lines up with their
-	measurements, but is a *tad* higher at the lowest masses and metallicities
-	that we consider. This suggests that the majority of the specific Ia rate
-	effect can be explained with the increased binary fraction at low Z, but
-	that at the lowest masses and metallicities, there may be an additional
-	effect if the specific Ia rate continues to increase.
+		The observed rates agreeing with the metallicity-dependent scenario
+		doesn't necessarily imply that the relation will stay sloped at z ~ 1
+		because this prediction is independent of the stellar mass function.
+		If the specific Ia rate is observed to flatten off, that would suggest
+		that SN Ia rates are not significantly metallicity-dependent and there
+		is some other effect causing it to be higher than expected given the
+		SFHs of galaxies as a function of stellar mass.
 
+	
+	(Will probably not show this panel below because it depends on the stellar
+	mass function, which is already a point of systematics in the observations.)
+
+	right: Distribution of SN Ia events as a function of stellar mass at z = 0,
+	showing a longer tail to low stellar masses if they do indeed scale as
+	Z^-0.5.
+
+		Together with the left-hand panel, just another observational
+		diagnostic to test if the Ia rate does indeed depend on metallicity.
