@@ -90,7 +90,7 @@ class umachine_sfh:
 			[xvals[1], f_of_x2y])
 
 
-def plaw_dtd(lookback, plaw_index = -1, delay = 0.15):
+def plaw_dtd(lookback, plaw_index = -1, delay = 0.1):
 	if lookback >= delay:
 		return lookback**plaw_index
 	else:
