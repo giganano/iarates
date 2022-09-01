@@ -109,7 +109,7 @@ def relative_ia_rate(log_stellar_mass, dtd = plaw_dtd, Z = 0.014,
 		ria += (Z / 0.014)**Zscaling_plaw_index * dtd(
 			lookbacks[i] - minlookback) * sfh(
 			lookbacks[i]) * (lookbacks[i + 1] - lookbacks[i]) * 1.e9
-		mstar += 1.e9 * sfh(lookbacks[i]) * (
+		mstar += 0.6 * 1.e9 * sfh(lookbacks[i]) * (
 			lookbacks[i + 1] - lookbacks[i])
 	return ria, mstar
 

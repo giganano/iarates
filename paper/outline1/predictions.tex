@@ -9,7 +9,7 @@
 \begin{figure*}
 \centering
 \includegraphics[scale = 0.55]{umachine_iarate_metdep.pdf}
-\includegraphics[scale = 0.55]{binaries_zscaling.pdf}
+\includegraphics[scale = 0.56]{binaries_zscaling.pdf}
 \caption{
 \textbf{Left}: Theoretically predicted scalings of the specific SN Ia rate with
 various assumptions about the metallicity dependence of the rate.
@@ -40,6 +40,10 @@ close-binary fraction observed in APOGEE~\citep{Moe2019}.
 	Here we take~$Z_\odot = 0.014$ according to~\citet{Asplund2009}, but this
 	choice has no impact as we normalize all of our specific SN Ia rates to 1
 	at~$10^{10}~\msun$ following~\citet{Brown2019} and~\citet{Gandhi2022}.
+	While the inferred scaling with stellar mass is significantly dependent
+	upon the assumed SMF, we clarify that this theoretical approach is
+	independent of the assumed mass distribution because the stellar mass by
+	which to normalize is known exactly by the value on the x-axis.
 
 	\item We show the results of this procedure in the left panel of Fig.
 	\ref{fig:specia_metdep} for~$\gamma = 0, -0.2, -0.5, -1$ and~$-2$ in
@@ -66,6 +70,17 @@ close-binary fraction observed in APOGEE~\citep{Moe2019}.
 	The scaling of~$M_\star^{-0.5}$ as found by~\citet{Brown2019}, however,
 	would require a yet stronger scaling of~$\gamma \approx -1.5$.
 
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.56]{umachine_iarate_redshiftevol.pdf}
+\includegraphics[scale = 0.55]{ia_massdist.pdf}
+\caption{
+Redshift evolution of the specific Ia rate with and without a metallicity
+dependence.
+}
+\label{fig:specia_zdep}
+\end{figure*}
+
 	\item In the right panel of Fig.~\ref{fig:specia_metdep}, we compare these
 	same scalings with~$Z$ to the close binary fractions measured by
 	\citet{Moe2019}.
@@ -83,12 +98,26 @@ close-binary fraction observed in APOGEE~\citep{Moe2019}.
 	as suggested by the~\citet{Andrews2013} MZR, then there is a slight
 	tension between a~$Z^{-0.5}$ scaling and the close binary fraction measured
 	by~\citet{Moe2019}.
-	If a~$Z^{-0.5}$ scaling is accurate, then in this case it would be
-	reasonable to suggest that any additional SNe Ia that the increase in the
-	close binary fraction could not produce are supplied by lower metallicity
-	stars leaving behind higher mass WDs as postulated by~\citet{Kistler2013},
-	though even in this case, the scaling of the close binary fraction with
-	metallicity can explain the majority of the effect.
+	If both the~\citet{Andrews2013} and a~$Z^{-0.5}$ scaling are accurate, then
+	it would be reasonable to suggest that the tension between the close binary
+	fraction and the SN Ia rate at~$Z \approx 0.1 Z_\odot$ is due to lower
+	metallicity stars producing higher mass WDs which are easier to grow to the
+	Chandrasekhar mass and subsequently explode -- the scenario postulated by
+	\citet{Kistler2013}.
+	Even so, the scaling of the close binary fraction with metallicity can
+	explain the majority of the effect at~$Z \approx 0.1 Z_\odot$ with the
+	\citet{Andrews2013} MZR anyway.
+	If instead the~$M_\star^{-0.5}$ scaling found by~\citet{Brown2019} is
+	accurate, then the required~$\sim Z^{-1.5}$ scaling cannot be explained by
+	the binary fraction alone as it would reach unphysical values (i.e.~$>1$)
+	within the range of the observed metallicities, and additional effects
+	such as that proposed by~\citet{Kistler2013} would be required to explain
+	the steep increase in SN Ia rates observed in low-mass galaxies.
+	This is nonetheless within the range of theoretical possibilities as only a
+	small fraction of WDs produced by~$\sim2-8~\msun$ stars actually explode
+	{\color{red} ($\sim$4\%?; Maoz \& Mannucci 2012?)}.
+	In~\S~\ref{sec:diagnostics} below, we discuss potential observational
+	diagnostics of a~$Z^{-0.5}$ metallicity dependence or lack thereof.
 
 	\item These are indeed highly simplified calculations in several regards.
 	First, we assume the characteristic SFH predicted by a SAM at all stellar
@@ -126,16 +155,6 @@ close-binary fraction observed in APOGEE~\citep{Moe2019}.
 	abundance in statistically average galaxies must be attained before
 	considering how it should scale with the detailed chemical composition of
 	the progenitor populations.
-
-
-
-	% To this end, we compute the SFH~$\dot{M}_\star$ of a galaxy as a function
-	% of its present-day stellar mass and lookback time by interpolating between the
-	% stellar masses and snapshot times included in the~\um~predictions.\footnote{
-	% 	\url{https://www.peterbehroozi.com/data.html}
-	% }
-	% To explore scalings of the SN Ia rate with metallicity of various
-	% strengths, we artificially amplify
 
 \end{itemize}
 
