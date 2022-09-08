@@ -30,6 +30,14 @@
 	\citet{Gandhi2022} as it fails to predict well-known correlations between
 	elemental abundances in the~\textsc{FIRE-2} suite of cosmological zoom-in
 	simulations~\citep{Hopkins2018}.
+	The realization that SN Ia rates could depend on metallicity with a
+	$\gamma = -0.5$ dependence should have important implications for chemical
+	evolution models of dwarf galaxies.
+	SNe Ia are responsible for a substantial portion of the abundances of
+	iron-peak elements in the universe~\citep[e.g.][]{Johnson2019}, and
+	incorporating more enrichment events at low metallicities could
+	significantly impact the inferred evolutionary parameters in statistical
+	fits to observed data.
 
 	\item A scaling of~$\gamma = -0.5$ is in excellent agreement with the
 	dependence of the close binary fraction measured in APOGEE~\citep{Moe2019}.
@@ -46,8 +54,8 @@
 	Marigo2007, Meng2008, Zhao2012, Kalirai2014}.
 	While our investigation cannot say anything definitive regarding the
 	ongoing debate over the single- or double-degenerate progenitor scenario
-	{\color{red} (refs)}, this interpretation somewhat disfavors the
-	single-degenerate scenario.
+	(see, e.g., the review in~\citealp{Maoz2014}), this interpretation somewhat
+	disfavors the single-degenerate scenario.
 	A natural explanation for higher mass WDs exploding more readily as SNe Ia
 	appeals to continuous mass growth from a binary companion (i.e. the
 	single-degenerate scenario) in which less accretion is required to reach
@@ -58,23 +66,47 @@
 	in which the mass is irrelevant, such as a merger with another WD (i.e.
 	the double-degenerate scenario).
 
-	\item At first glance, an inverse dependence of SN Ia rates on metallicity
-	may seem at odds with the recent realization by {\color{red} Holoien et al.
-	(2020)} that ASAS-SN SN Ia host galaxies tend to be oxygen-rich relative to
-	similar mass galaxies.
-	This bias arises naturally in any SN survey, however, because the SN Ia
-	rates are intrinsically higher in galaxies which experienced a recent
-	starburst (of order~$\sim$1 Gyr ago), and post-starburst galaxies are
-	known to be oxygen-rich due to enrichment by massive stars with short
-	lifetimes {\color{red} (refs)}.
-
-	\item The realization that SN Ia rates could depend on metallicity with a
-	$\gamma = -0.5$ dependence has important implications for galactic chemical
-	evolution.
-	SN Ia are responsible for a substantial portion of the abundances of
-	iron-peak elements in the universe {\color{red} (Johnson 2019)}, and
-	incorporating more events at low metallicity could significantly impact the
-	inferred evolutionary parameters.
+	\item The calculations we have presented here are simplified in several
+	regards.
+	First, we assume the characteristic SFH predicted by a SAM at all stellar
+	masses.
+	This is reasonble for computing expected mean trends, but in principle, the
+	underlying galaxy population should occupy a distribution of rates at
+	fixed stellar mass due to variations in their SFHs.
+	\citet{Brown2019} do not find strong evidence that the specific SN Ia rate
+	depends on star formation activity, but we do not investigate this here
+	because tracking galaxy-by-galaxy SFHs would considerably increase our
+	computational expense.
+	Second, we have assumed that all galaxies lie perfectly on the MZR.
+	This should also be sufficient for computing mean trends, but similar to
+	their SFHs, galaxies should populate a distribution of metallicities at
+	fixed stellar mass.
+	Third, our metallicity scaling of~$Z^{\gamma}$ where
+	$Z = Z_\odot 10^\text{[O/H]}$ assumes that all SNe Ia in any galaxy arise
+	from stellar populations at exactly the gas-phase abundance implied by the
+	MZR.
+	This is nonetheless a reasonable assumption because models of galactic
+	chemical evolution incorporating an exchange of baryons with the
+	surrounding medium via inflows and outflows suggest that galaxies should
+	rapidly approach an equilibrium abundance in which the production of
+	new metals is balanced by losses to star formation and outflows
+	\citep{Larson1972, Weinberg2017}.
+	This would imply that the young stellar populations which dominate the SN
+	Ia rate (see Fig.~\ref{fig:sfhs} and discussion in~\S~\ref{sec:galprops})
+	should be of similar metallicities -- at least on average.
+	Although the close binary fraction is known to increase at low abundances
+	in APOGEE~\citep{Badenes2018, Moe2019},~\citet{Mazzola2020} find that the
+	binary fraction decreases for stars with high [$\alpha$/Fe] ratios at
+	fixed [Fe/H], suggesting that the detailed chemical composition may
+	significantly impact stellar multiplicity.
+	Furthermore, the abundances of metals in stars is a many-dimensional
+	quantity~\citep[e.g.][]{Ting2022}.
+	However, a theoretical understanding of the metallicity dependence of SN Ia
+	rates is a relatively new topic in the literature.
+	A first-order understanding of how the rates scale with the absolute metal
+	abundance in statistically average galaxies must be attained before
+	considering how it should scale with the detailed chemical composition of
+	the progenitor populations.
 
 \end{itemize}
 
