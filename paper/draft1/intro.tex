@@ -1,0 +1,112 @@
+
+\documentclass[ms.tex]{subfiles}
+\begin{document}
+
+\section{Introduction}
+\label{sec:intro}
+
+Supernova surveys have revealed that low-mass galaxies are more efficient
+producers of type Ia supernovae (SNe Ia) than their higher mass counterparts
+\citep[e.g.][]{Mannucci2005, Sullivan2006, Smith2012}.
+These explosions arise from the thermonuclear detonation of a white dwarf
+\cite[WD;][]{Hoyle1960}, the exposed carbon-oxygen core of a low-mass star.
+Using archival spectroscopic data,~\citet{Brown2019} derived stellar masses for
+the host galaxies of SNe Ia observed by the All Sky Automated Survey for
+Supernovae~\citep[ASAS-SN;][]{Shappee2014, Kochanek2017}, finding that the
+specific SN Ia rate -- the rate per unit stellar mass -- scales approximately
+with the inverse square root of the mass itself (i.e.~$\dot{N}_\text{Ia} /
+M_\star \sim M_\star^{-0.3}$).
+\citet{Gandhi2022} demonstrate that this dependence is unfortunately plagued by
+uncertainties in the galaxy stellar mass function (SMF; see, e.g.,
+\citealp*{Weigel2016} for discussion of the systematics and challenges in
+empirical measurements).
+While~\citet{Brown2019} used the~\citet{Bell2003} SMF, the scaling becomes
+shallower (approximately~$\dot{N}_\text{Ia} / M_\star \sim M_\star^{-0.3}$)
+when using the steeper~\citet{Baldry2012} form due to a more abundant
+underlying galaxy population at low stellar masses.
+This leads to significantly better agreement between the ASAS-SN measurements
+and Wiseman et al.'s~\citeyearpar{Wiseman2021} rates measured with SNe Ia from
+the Dark Energy Survey~\citep[DES;][]{DES2016}, also normalized with the
+\citet{Baldry2012} SMF.
+Although there is debate surrounding the strength of the scaling, it is now
+well-established qualitatively that the specific SN Ia rate is higher in dwarf
+galaxies.
+There are a handful of potential pathways which could give rise to this
+empirical result.
+\par
+First, the mean star formation histories (SFHs) of galaxies are believed to
+vary as a function of stellar mass. Semi-analytic models of galaxy formation
+(see, e.g., the reviews of~\citealp{Baugh2006} and~\citealp{Somerville2015a})
+suggest that dwarf galaxies in the field have more extended SFHs than their
+higher mass counterparts.
+Unless the SN Ia delay-time distribution~\citep[DTD; e.g.,][]{Maoz2012a}
+depends on a galaxy's stellar mass in a highly specific manner, the variations
+in SFHs should impact the intrinsic SN Ia rate across the various galaxy
+demographics.
+\par
+Second,~\citet{Kistler2013} argue that an inverse dependence of the
+specific SN Ia rate on stellar mass can be explained by considering metallicity
+as a confounding variable.
+Lower mass galaxies are empirically known to host lower metallicity stellar
+populations~\citep{Gallazzi2005, Kirby2013} as a consequence of lower
+metallicity gas reservoirs (\citealp{Tremonti2004};~\citealp*{Zahid2011};
+\citealp{Andrews2013, Zahid2014}).
+Whether or not a WD explodes as a SN Ia should be sufficiently decoupled from
+its galactic environment, making the chemical composition of the progenitor
+populations a more attractive explanation.
+\citet{Kistler2013} postulate that this could arise because at fixed initial
+mass, lower metallicity stars leave behind higher mass WDs, potentially making
+it easier for them to grow to the Chandrasekhar mass and explode.
+This arises due to the low Rosseland mean opacity of a low metallicity plasma,
+which gives rise to weaker winds from asymptotic giant branch stars
+\citep{Willson2000, Marigo2007}, leading to lower mass loss rates and
+consequently stronger core growth~\citep{Kalirai2014}, thereby leaving behind a
+more massive WD at fixed initial mass (\citealp{Umeda1999};~\citealp*{Meng2008};
+\citealp{Zhao2012}).
+\par
+Furthermore, whether from the single-~\citep[e.g.][]{Whelan1973} or
+double-degenerate scenario~\citep[e.g.][]{Iben1984, Webbink1984}, SNe Ia arise
+in binary star systems.
+Based on multiplicity measurements of solar-type stars in APOGEE\footnote{
+	Apache Point Observatory Galaxy Evolution Experiment
+}~\citep{Majewski2017}, the close binary fraction is known to increase with
+decreasing metallicity (\citealp{Badenes2018};~\citealp*{Moe2019}).
+Motivated by these results,~\citet{Gandhi2022} explore a handful of
+parametrizations for the metallicity-dependence of the SN Ia rate in
+re-simulated galaxies from FIRE-2~\citep{Hopkins2018}.
+They find that a~$Z^{-0.5}$ scaling leads to better agreement with the observed
+stellar mass - stellar metallicity relation than with metallicity-independent
+rates.
+They disfavor models with a stronger metallicity-dependence (e.g.~$\sim Z^{-1}$)
+because the predictions of such models are in tension with the relationship
+between the [Mg/Fe] and [Fe/H] abundances in M31 satellite galaxies observed
+by~\citet*{Vargas2014}.
+\par
+At first glance, an inverse dependence of SN Ia rates on metallicity may seem
+at odds with the recent realization by~\citet{Holoien2022} that dwarf galaxy
+hosts of SNe Ia detected by ASAS-SN tend to be oxygen-rich relative to similar
+mass galaxies.
+However, SN hosts detected by any survey are likely not a representative sample
+of the underlying galaxy population because, due to the steeply declining
+nature of the DTD~\citep[e.g.][]{Maoz2012a}, the intrinsically highest SN Ia
+rates should be in systems which experienced a recent starburst ($\lesssim$1
+Gyr ago).
+Since oxygen is produced mostly by massive stars with lifetimes shorter than
+the delay-times of SNe Ia~\citep*[e.g.][]{Hurley2000, Johnson2019}, these
+galaxies should also have a higher-than-average oxygen abundance (for
+theoretical discussion of starbursts in galactic chemical evolution models,
+see, e.g.,~\citealt{Johnson2020}).
+\par
+In the present paper, we assume that the strong scaling of the speicific SN Ia
+rate with stellar mass is due to metallicity effects and conduct simple
+numerical calculations to investigate the origin of the effect.
+We combine the relationship between galaxy stellar mass and mean SFH predicted
+by the~\um~semi-analytic model~\citep{Behroozi2019} with the popular~$\tau^{-1}$
+DTD for SNe Ia~\citep[e.g.][]{Maoz2012a} and empirical parametrizations of the
+mass-metallicity relation (MZR) for galaxies~\citep{Andrews2013, Zahid2014}.
+With a given SFH and DTD, we can compute the SN Ia rate for a galaxy of some
+stellar mass, and by assuming that it lies on the observed MZR, we can
+simultaneously fold in various assumptions about how the overall rate might
+scale with the metallicity~$Z$.
+
+\end{document}
