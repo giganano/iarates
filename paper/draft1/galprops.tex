@@ -5,6 +5,7 @@
 \section{Galactic Properties}
 \label{sec:galprops}
 
+% fig 1
 \begin{figure*}
 \centering
 \includegraphics[scale = 0.43]{umachine_sfhs.pdf}
@@ -42,7 +43,7 @@ We begin by examining how the mean galactic SFH varies with present-day stellar
 mass as predicted by the~\um~semi-analytic model~\citep{Behroozi2019}.
 Using dark matter halo properties supplied by the~\textit{Bolshoi-Planck} and
 \textit{Multi-Dark Planck 2} dark matter only simulations~\citep{Klypin2016,
-Rodriguez-Puebla2016},~\um~follows a convention semi-analytic model framework
+RodriguezPuebla2016},~\um~follows a convention semi-analytic model framework
 (see, e.g., the review in~\citealt{Somerville2015a}) by parametrizing the SFRs
 of galaxies as a function of lookback time, the assembly history of the halo,
 and the depth of the halo's potential well.
@@ -90,5 +91,146 @@ of angular momentum due to graviational wave emission (e.g.
 We therefore adopt this parametrization in this paper, though we have
 reconducted our analysis using an exponential DTD with a timescale of
 $\tau_\text{Ia} = 1.5$ Gyr and found similar results.
+We do not consider metallicity-dependent variations in the shape of the DTD
+here, instead focusing on the overall normalization.
+\par
+In principle, the minimum delay time of the DTD could be as short as~$\sim$40
+Myr if WDs are produced by~$\lesssim 8~\msun$ stars~\citep*[e.g.][]{Hurley2000},
+and perhaps even shorter at low metallicity if the total metal content of a
+star significantly impacts its lifetime as in, e.g.,~\citep{Kodama1997} and
+\citet{Vincenzo2016}.
+However, if SNe Ia require some additional time following WD formation, the
+minimum delay will be longer.
+Since we are interested in demonstratin the first-order effects of variations
+in SFHs on specific SN ia rates, we assume a value of~$t_\text{D} = 100$ Myr.
+We have also reproduced the results of this paper with both~$t_\text{D} = 40$
+Myr and~$t_\text{D} = 150$ Myr and found similar results in both cases.
+\par
+For an SFH~$\dot{M}_\star$ and DTD~$R_\text{Ia}$ as functions of lookback time
+$\tau$, the specific SN Ia rate can be expressed as
+\begin{equation}
+\frac{\dot{N}_\text{Ia}(M_\star | \gamma)}{M_\star} = Z(M_\star)^\gamma
+\ddfrac{
+	\int_0^{T - t_\text{D}}\dot{M}_\star(\tau | M_\star) R_\text{Ia}(\tau) d\tau
+}{
+	(1 - f_\text{loss})\int_0^T \dot{M}_\star(\tau | M_\star) d\tau
+}
+\label{eq:specia}
+\end{equation}
+where~$t = T - \tau$ is the time since the onset of star formation,~$T$ is the
+same quantity at the present day, and~$f_\text{loss}$ is a corrective term to
+account for mass loss as stellar populations age.
+To investigate scalings with metallicity of various strengths, we artificially
+introduce the single-component power-law~$Z^\gamma$ where~$Z$ is given by the
+MZR.
+While the normalization of the SFH cancels, we omit the normalization of the
+DTD from equation~\refp{eq:specia} because we are not interested in the
+absolute SN Ia rate in the present paper -- only the relative scaling as a
+function of galaxy stellar mass.
+In detail,~$f_\text{loss}$ varies with the age of a stellar population.
+However, the material that is eventually returned to the ISM is dominated by
+high mass stars with short lifetimes, and the loss rate drops rapidly to the
+long lifetimes of lower mass stars.
+It is therefore accurate to first-order to assume that stellar populations of
+all ages have returned~$f_\text{loss} \approx 40\%$ of their initial mass back
+to the ISM (appropriate for a~\citealt{Kroupa2001} IMF;
+$f_\text{loss} \approx 20\%$ for a~\citealt{Salpeter1955} IMF; see discussion
+in~\S\S~2.2 and 3.7 of~\citealt*{Weinberg2017}).
+
+% fig 2
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.55]{umachine_iarate_metdep.pdf}
+\includegraphics[scale = 0.56]{binaries_zscaling.pdf}
+\caption{
+\textbf{Left}: Theoretically predicted scalings of the specific SN Ia rate with
+galaxy stellar mass (see equation~\ref{eq:specia}) assuming the mean SFHs
+reported by~\um~and a single power-law dependence on metallicity~$Z^\gamma$
+with~$\gamma = 0$ (i.e. no dependence; black),~$\gamma = -0.2$ (red),
+$\gamma = -0.5$ (green),~$\gamma = -1$ (blue), and~$\gamma = -2$ (purple).
+Following~\citet{Brown2019} and~\citet{Gandhi2022}, we normalize all rates to
+a value of 1 at~$\mstar = 10^{10}~\msun$.
+\textbf{Right}: The same metallicity scalings as in the left panel in
+comparison to the close binary fractions observed in APOGEE
+\citep[][black dashed line with error bars]{Moe2019}.
+All metallicity scalings are normalized to the observed binary fraction of 10\%
+at~$\log_{10}(Z / Z_\odot) = +0.5$.
+We mark the characteristic metallicity of a~$\mstar = 10^{7.2}~\msun$ galaxy
+($\log_{10}(Z / Z_\odot) \approx -0.6$) according to the~\citet{Zahid2014} MZR
+with a black dotted line.
+}
+\label{fig:specia_metdep}
+\end{figure*}
+
+To illustrate qualitative how the specific SN Ia rate scales with how prompt or
+extended the SFH is, we consider the simple example of a linear-exponential
+SFH~$\dot{M}_\star \propto te^{-t/\tau_\text{sfh}}$.
+The middle panel of Fig.~\ref{fig:sfh_mzr} shows equation~\refp{eq:specia} as
+a function of the e-folding timescale~$\tau_\text{sfh}$ assuming~$\gamma = 0$
+and~$T = 13.2$ Gyr in all cases.
+The specific SN Ia rate is slowest in the limiting case of a single episode of
+star formation (i.e.~$\tau_\text{sfh} = 0$) and rises steeply until
+$\tau_\text{sfh} \approx 10$ Gyr.
+The rate approaches a constant value for yet longer~$\tau_\text{sfh}$ as the
+galaxy approaches the opposing limiting case in which the SFH is approximately
+constant (i.e.~$\tau_\text{sfh} \gg T$).
+Although a~$\tau^{-1}$ DTD is significantly extended (more so than a single
+exponential), it is not so extended that galaxies with sharply declining SFHs
+can sustain high SN Ia rates from the earliest epochs of star formation.
+A higher specific SN Ia rate as observed in dwarf galaxies is therefore a
+natural consequence of their more extended SFHs, though we demonstrate below
+that this effect accounts for only a factor of~$\sim$2 between~$10^{7.2}$ and
+$10^{10} \msun$.
+\par
+Not only do dwarf galaxies have more extended SFHs, but the empirical MZR
+indicates that they also have a lower metal content~\citep{Tremonti2004,
+Gallazzi2005, Zahid2011, Kirby2013}.
+\footnote{
+	We have transformed from their~$\log_{10}\text{(O/H)}$ measurements to the
+	logarithmic abundance relative to the sun~$\log_{10}(Z / Z_\odot)$ assuming
+	the solar oxygen abundance derived by~\citet{Asplund2009}.
+}
+At low metallicities, there are multiple effects which could increase the SN Ia
+rate.
+At fixed initial mass, low metallicity stars leave behind more massive WDs due
+to weaker winds and consequently enhanced core growth during the AGB phase
+\citep{Umeda1999, Willson2000, Marigo2007, Meng2008, Zhao2012, Kalirai2014}.
+This could make it easier for a WD to reach the Chandrasekhar mass and explode
+(see discussion in~\citealt{Kistler2013}).
+Additionally, the stellar close binary fraction is known to increase from
+$\sim$10\% at~$\sim$3 times the metallicity of the sun~$Z_\odot$ to~$\sim$40\%
+at~$\sim0.1 Z_\odot$.
+Consequently, dwarf galaxies should have more potential SN Ia progenitors per
+unit mass of star formation due to more massive WDs and a higher close binary
+fraction.
+\par
+In the right panel of Fig.~\ref{fig:sfh_mzr} we plot the MZR at a selection of
+redshifts as parametrized by~\citet[][see their equation 5]{Zahid2014}.
+Although~\um~allows us to investigate these effects at stellar masses as low as
+$10^{7.2}~\msun$,~\citet{Zahid2014} present measurements only for the
+$\sim10^9 - 10^{11}~\msun$ range.
+We have therefore duplicated our results at~$z = 0$ using the parametric form
+of~\citet{Andrews2013}.
+They use stacked spectra from the seventh data release of the Sloan Digital
+Sky Survey~\citep[SDSS;][]{York2000, Abazajian2009, Abdorrouf2022} to increase
+the signal-to-noise of the weak [OII] and [OIII] auroral lines at 7320, 7330
+and 4363~\AA to obtain direct measurements of the electron temperatures and
+abundances in bins of stellar mass extended as low as~$\sim 10^{7.4}~\msun$.
+We show the~\citet{Andrews2013} MZR in comparison to the~\citet{Zahid2014} form
+in the right panel of Fig.~\ref{fig:sfh_mzr}.
+The~\citet{Andrews2013} parametrization has a lower plateau but otherwise a
+similar slope and turnover mass.
+Although neither~\citet{Andrews2013} nor~\citet{Zahid2014} measure the MZR
+above~$10^{11}~\msun$, both suggest that these galaxies should be on the
+plateau anyway.
+We find similar results in~\S~X below using both parametrizations because,
+following~\citet{Brown2019} and~\citet{Gandhi2022}, we quantify the specific
+SN Ia rate as a function of stellar mass normalized to 1 at~$10^{10}~\msun$.
+Therefore, the normalization of the MZR is irrelevant and what determines the
+mass dependence in our calculations is the metallicity relative to that of
+a~$10^{10}~\msun$ galaxy.
+In the interest of exploring SN Ia rates at redshifts of~$z = 0.5$ and~$z = 1$,
+we retain the~\citet{Zahid2014} formalism in~\S\S~\ref{sec:predictions}
+and~\ref{sec:diagnostics} below.
 
 \end{document}
