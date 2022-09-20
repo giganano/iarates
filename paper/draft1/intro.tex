@@ -22,12 +22,12 @@ in the galaxy stellar mass function (SMF; see, e.g.,~\citealp*{Weigel2016} for
 discussion of the systematics and challenges in empirical measurements).
 While~\citet{Brown2019} used the~\citet{Bell2003} SMF, the scaling becomes
 shallower (approximately~$\dot{N}_\text{Ia} / M_\star \sim M_\star^{-0.3}$)
-when using the steeper~\citet{Baldry2012} form due to a more abundant
-underlying galaxy population at low stellar masses.
-This leads to significantly better agreement between the ASAS-SN measurements
-and Wiseman et al.'s~\citeyearpar{Wiseman2021} rates measured with SNe Ia from
-the Dark Energy Survey~\citep[DES;][]{DES2016}, also normalized with the
-\citet{Baldry2012} SMF.
+when using the steeper~\citet{Baldry2012} double-schechter parametrization due
+to a more abundant underlying galaxy population at low stellar masses.
+This change leads to significantly better agreement between the ASAS-SN
+measurements and Wiseman et al.'s~\citeyearpar{Wiseman2021} rates measured with
+SNe Ia from the Dark Energy Survey~\citep[DES;][]{DES2016}, also normalized
+with the~\citet{Baldry2012} SMF.
 Although there is debate surrounding the strength of the scaling, it is now
 well-established qualitatively that the specific SN Ia rate is higher in dwarf
 galaxies.
@@ -53,16 +53,16 @@ metallicity gas reservoirs (\citealp{Tremonti2004};~\citealp*{Zahid2011};
 \citealp{Andrews2013, Zahid2014}).
 Whether or not a WD explodes as a SN Ia should be sufficiently decoupled from
 its galactic environment, making the chemical composition of the progenitor
-populations a more attractive explanation.
-\citet{Kistler2013} postulate that this could arise because at fixed initial
-mass, lower metallicity stars leave behind higher mass WDs, potentially making
-it easier for them to grow to the Chandrasekhar mass and explode.
-This arises due to the low Rosseland mean opacity of a low metallicity plasma,
-which gives rise to weaker winds from asymptotic giant branch stars
-\citep{Willson2000, Marigo2007}, leading to lower mass loss rates and
-consequently stronger core growth~\citep{Kalirai2014}, thereby leaving behind a
-more massive WD at fixed initial mass (\citealp{Umeda1999};~\citealp*{Meng2008};
-\citealp{Zhao2012}).
+populations a more attractive explanation, and~\citet{Kistler2013} point out
+that low metallicity stars leave behind higher mass WDs which could potentially
+grow to the Chandrasekhar mass and subsequently explode more easily than their
+less massive counterparts.
+This difference in WD masses arises because the low Rosseland mean opacity of a
+low metallicity plasma gives rise to weaker winds during the asymptotic giant
+branch phase~\citep{Willson2000, Marigo2007}, leading to lower mass loss rates
+and consequently stronger core growth~\citep{Kalirai2014}, thereby leaving
+behind a more massive WD at fixed initial mass (\citealp{Umeda1999};
+\citealp*{Meng2008};~\citealp{Zhao2012}).
 \par
 Furthermore, whether from the single-~\citep[e.g.][]{Whelan1973} or
 double-degenerate scenario~\citep[e.g.][]{Iben1984, Webbink1984}, SNe Ia arise
@@ -74,14 +74,9 @@ decreasing metallicity (\citealp{Badenes2018};~\citealp*{Moe2019}).
 Motivated by these results,~\citet{Gandhi2022} explore a handful of
 parametrizations for the metallicity dependence of the SN Ia rate in
 re-simulated galaxies from FIRE-2~\citep{Hopkins2018}.
-They find that a~$Z^{-0.5}$ scaling leads to better agreement with the observed
-stellar mass - stellar metallicity relation than with metallicity-independent
-rates.
-% They disfavor models with a stronger metallicity dependence
-% (e.g.~$\sim Z^{-1}$)
-% because the predictions of such models are in tension with the relationship
-% between the [Mg/Fe] and [Fe/H] abundances in M31 satellite galaxies observed
-% by~\citet*{Vargas2014}.
+They find that a~$Z^{-0.5}$ scaling leads to better agreement with the empirical
+relationship between galactic stellar masses and stellar abundances than with
+metallicity-independent SN Ia rates.
 \par
 At first glance, an inverse dependence of SN Ia rates on metallicity may seem
 at odds with the recent realization by~\citet{Holoien2022} that dwarf galaxy
@@ -97,5 +92,8 @@ the delay-times of SNe Ia~\citep*[e.g.][]{Hurley2000, Johnson2019}, these
 galaxies should also have a higher-than-average oxygen abundance (for
 theoretical discussion of starbursts in galactic chemical evolution models,
 see, e.g.,~\citealt{Johnson2020}).
+In other words, observed SN Ia hosts may be slightly metal-rich on average, but
+one may arrive at a different conclusion if it were feasible to determine rates
+within individual galaxies.
 
 \end{document}

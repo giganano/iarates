@@ -23,7 +23,10 @@ Binary Fractions, and Metallicity
 		points made regarding the left-hand panel.
 
 	right: The mass-metallicity relation from Zahid et al. (2014) at a range of
-	redshifts
+	redshifts.
+
+		Main point is that there's also an effect of the right sign with
+		low-mass galaxies having lower metallicity and thus higher mass white
 
 2. 2 panel figure
 
