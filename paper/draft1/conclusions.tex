@@ -31,17 +31,71 @@ If instead the steeper scaling of~$\dot{N}_\text{Ia} / M_\star \sim
 M_\star^{-0.5}$ derived by~\citet{Brown2019} is accurate, then stronger
 scalings ($\gamma \approx -1.5$) are required, but~\citet{Gandhi2022}
 demonstrate that these scalings fail to reproduce the well-known correlations
-of [Mg/Fe] and [Fe/H] abundances.
-Based on similar arguments, the realization that SN Ia rates could depend on
-metallicity with a~$\gamma = -0.5$ dependence should have important
-implications for chemical evolution models of dwarf galaxies, known empirically
-to host both stellar populations~\citep{Gallazzi2005, Kirby2013} and gas
-reservoirs~\citep{Tremonti2004, Zahid2011, Andrews2013, Zahid2014} with
-significantly sub-solar abundances.
-SNe Ia are responsible for a substantial portion ($\sim$half) of the abundances
-of iron-peak elements in the universe~\citep[e.g.][]{Johnson2019}, and
-incorporating more enrichment events at low metallicities could significantly
-impact inferred evolutionary parameters in statistical fits to observed data.
+of [Mg/Fe] and [Fe/H] abundances as observed in M31 satellites
+by~\citet*{Vargas2014}.
+
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.5]{onezone_application.pdf}
+\caption{
+Application to one-zone chemical evolution models based on that of
+\citet{Johnson2020}.
+}
+\label{fig:onezone_app}
+\end{figure*}
+
+The realization that SN Ia rates could depend on metallicity with a
+$\gamma = -0.5$ dependence should have important implications for chemical
+evolution models of dwarf galaxies, known empirically to host both stellar
+populations~\citep{Gallazzi2005, Kirby2013} and gas reservoirs
+\citep{Tremonti2004, Zahid2011, Andrews2013, Zahid2014} with significantly
+sub-solar abundances.
+To demonstrate this, we briefly explore a handful of one-zone models of
+galactic chemical evolution based on~\citet{Johnson2020}.
+We take an exponential SFH with an e-folding timescale of~$\tau_\text{sfh} = 6$
+Gyr and our minimum delay of~$t_\text{D} = 100$ Myr before the onset of SNe Ia
+from a given stellar population.
+For metallicity-dependent rates, we simply apply a~$(Z / Z_\odot)^{-0.5}$
+prefactor to their Fe yield of~$y_\text{Fe}^\text{Ia} = 0.0017$, which assumes
+that the shape of the DTD does not vary with metallicity -- only the
+normalization.
+We otherwise use the same evolutionary parameters
+as~\citet[][for details, see discussion in their~\S~2]{Johnson2020}.
+\par
+The left-hand panel of Fig.~\ref{fig:onezone_app} illustrates a model where we
+take the same star formation efficiency timescale ($\tau_\star = 2$ Gyr) and
+mass-loading factor describing the efficiency of outflows
+($\eta \equiv \dot{M}_\text{out} / \dot{M}_\star = 2.5$) as in their fiducial
+model.
+The~$\gamma = -0.5$ case diverges from~$\gamma = 0$ near the ``knee''
+in the evolutionary track in the gas-phase, but the two are similar at
+near-solar abundances.
+In a case where star formation is less efficient (e.g., $\tau_\star = 10$ Gyr;
+middle panel), the differences are more dramatic.
+Due to higher~$\tau_\star$, the knee occurs at much lower [Fe/H]
+\citep{Weinberg2017}, and due to the extra SN Ia events relative to
+$\gamma = 0$, the interstellar medium reaches~$\sim$solar [O/Fe] at much lower
+[Fe/H].
+With a near-solar equilibrium abundance, this model produces a ``secondary
+plateau'' in [O/Fe] because the Fe enrichment rate slows down due to the
+metallicity-dependence of the yield such that it is produced in similar ratios
+as O (see inset).
+In the right-hand panel, we now additionally strengthen outflows to~$\eta = 20$,
+which lowers the equilibrium abundance to [Fe/H]~$\approx -1$ for~$\gamma = 0$.
+Similar to the case shown in the left-hand panel,~$\gamma = -0.5$ deviates from
+$\gamma = 0$ at the knee in the evolutionary track, but later ends up along an
+extension of the~$\gamma = 0$ track, ending at a higher [Fe/H] and lower [O/Fe]
+than~$\gamma = 0$ due to the enhanced Fe yield.
+\par
+These models are intended to be illustrative rather than quantitative.
+In general, the only regions of chemical space where~$\gamma = 0$ and
+$\gamma = -0.5$ make similar predictions are at near-solar abundances and along
+the high [O/Fe] plateau, which occurs before the onset of SN Ia enrichment.
+A~$\gamma = -0.5$ scaling has the strongest impact for dwarf galaxies where
+star formation is inefficient~\citep[e.g.][]{Hudson2015} and the abundances are
+low.
+In these models, the latter arises due to strong outflows as a consequence of
+the shallow gravity well.
 \par
 A scaling of~$\gamma = -0.5$ is in excellent agreement with the dependence of
 the close binary fraction measured in APOGEE~\citep{Moe2019}, which suggests
