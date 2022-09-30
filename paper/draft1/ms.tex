@@ -17,6 +17,7 @@
 \usepackage[toc, page]{appendix}
 \usepackage{subfiles}
 \usepackage{geometry}
+\setlength{\parskip}{0pt}
 % \linespread{1.8}
 % \hypersetup{draft}
 \hypersetup{ % all blue links
@@ -34,8 +35,8 @@
 
 \providecommand{\noopsort}[1]{}
 
-\title[Type Ia Supernova Rates]{Type Ia Supernova Rates: A Tale of Star
-Formation Histories, Binary Fractions and Metallicity}
+\title[Type Ia supernova rates]{Binaries drive high type Ia supernova rates in
+dwarf galaxies}
 
 \author[J.W. Johnson, C.S. Kochanek \& K.Z. Stanek]{
 	James W. Johnson,$^{1, 2}$\thanks{
@@ -43,7 +44,6 @@ Formation Histories, Binary Fractions and Metallicity}
 	}
 	Christopher S. Kochanek$^{1, 2}$ and
 	Krzysztof Z. Stanek$^{1, 2}$
-	% \\ \null \\
 	\\
 	$^{1}$ Department of Astronomy, The Ohio State University,
 	140 W. 18th Ave., Columbus, OH, 43210, USA
@@ -70,9 +70,10 @@ dwarf -- galaxies: evolution -- stars: mass function
 \subfile{intro.tex}
 \subfile{galprops.tex}
 \subfile{predictions.tex}
-\subfile{diagnostics.tex}
+% \subfile{diagnostics.tex}
 \subfile{conclusions.tex}
 \subfile{acknowledgments.tex}
+\subfile{data_availability.tex}
 
 \bibliographystyle{mnras}
 \bibliography{ms}

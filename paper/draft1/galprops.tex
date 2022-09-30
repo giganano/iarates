@@ -12,17 +12,17 @@
 \includegraphics[scale = 0.42]{iarate_vs_tausfh.pdf}
 \includegraphics[scale = 0.42]{mzr.pdf}
 \caption{
-\textbf{Left}: The best-fit mean SFH of galaxies with present-day stellar
-masses of $\mstar = 10^{7.5 \pm 0.1}$ (black),~$10^{8.5 \pm 0.1}$ (red),
-$10^{9.5 \pm 0.1}$ (green), and $10^{10.5 \pm 0.1} \msun$ (blue) as reported
-by~\um~and normalized by the present-day stellar mass itself.
+\textbf{Left}: The best-fit mean SFHs of the~\um~galaxies with present-day
+stellar masses of $\mstar = 10^{7.5 \pm 0.1}$ (black),~$10^{8.5 \pm 0.1}$ (red),
+$10^{9.5 \pm 0.1}$ (green), and $10^{10.5 \pm 0.1} \msun$ (blue) normalized by
+their present-day stellar masses.
 \textbf{Middle}: The specific SN Ia rate as a function of the e-folding
 timescale of the SFH~$\tau_\text{sfh}$ assuming a linear-exponential time
 dependence and a~$\tau^{-1}$ power-law SN Ia DTD.
 \textbf{Right}: The redshift-dependent MZR reported by~\citet{Zahid2014} at
 $z = 0$ (black solid),~$z = 0.5$ (blue), and~$z = 1$ (red).
-For comparison, we additionally plot the MZR measured by
-\citet[][black dotted, appropriate for~$z \approx 0$]{Andrews2013}.
+For comparison, we include the~$z \approx 0$ MZR measured by
+\citet[][black dotted]{Andrews2013}.
 }
 \label{fig:sfh_mzr}
 \end{figure*}
@@ -78,7 +78,7 @@ However, if SNe Ia require some additional time following WD formation, the
 minimum delay will be longer.
 Since we are interested in the first-order effects of variations in the SFH on
 specific SN Ia rates, we assume a value of~$t_\text{D} = 100$ Myr.
-We have reproduced our results with both~$t_\text{D} = 40$ Myr and
+We have also reproduced our calculations with both~$t_\text{D} = 40$ Myr and
 $t_\text{D} = 150$ Myr and found similar results in both cases.
 \par
 % \par
@@ -124,7 +124,7 @@ $\tau$, the specific SN Ia rate at a stellar mass~$\mstar$ is
 where~$T = 13.2$ Gyr is the time elapsed between the onset of star formation
 and the present day.
 To investigate the effects of metallicity, we add a power-law
-$Z(M_\star)^\gamma$ where~$Z$ is given by the MZR.
+$Z(\mstar)^\gamma$ where~$Z$ is given by the MZR.
 We are only interested in the scaling of the rates with~\mstar, so we normalize
 all rates to unity at~$\mstar = 10^{10}~\msun$ following~\citet{Brown2019}.
 Although the denominator of equation~\refp{eq:specia} in detail should depend
@@ -188,28 +188,25 @@ Therefore, the normalization of the MZR is irrelevant and what determines the
 mass dependence in our calculations is the metallicity relative to that of a
 $10^{10}~\msun$ galaxy.
 In the interest of exploring SN Ia rates at redshifts of~$z = 0.5$ and~$z = 1$,
-we retain the~\citet{Zahid2014} formalism in~\S~\ref{sec:predictions} below.
-\par
-We now combine the mean SFHs for galaxies of various stellar masses
-from~\um~with the observed MZR in the~$10^{7.2} - 10^{12}~\msun$ range in the
-framework discussed in~\S~\ref{sec:galprops}.
-Given the present day stellar mass of a galaxy, we compute its SFH as a
-function of lookback time by interpolating between the stellar masses and
-snapshot times included in the~\um~predictions.\footnote{
+we retain the~\citet{Zahid2014} formalism in~\S~\ref{sec:predictions} below
+where we combine the mean~\um~SFHs with the observed MZR in the
+$10^{7.2} - 10^{12}~\msun$ mass range.
+Given a present-day stellar mass, we compute its SFH as a function of
+lookback time by interpolating between the stellar mass and snapshot times
+included in the~\um~predictions.\footnote{
 	\url{https://www.peterbehroozi.com/data.html}. We interpolate linearly in
 	both stellar mass and lookback time and not in the log of either
 	quantity.
 }
 We then compute the specific SN Ia rate according to equation~\refp{eq:specia}
-given the implied SFH and a~$\tau^{-1}$ DTD, artificially amplifying the rate
-by a factor of~$Z^\gamma$ where the metallicity~$Z$ is computed from the
+given the implied SFH and and a~$\tau^{-1}$ DTD, amplifying the rate by a
+factor of~$Z^\gamma$ where the metallicity~$Z$ is computed from the
 \citet{Zahid2014} MZR.
 While the observationally inferred scaling with stellar mass is significantly
 dependent upon the assumed SMF~\citep{Gandhi2022}, we emphasize that this
 theoretical approach is independent of the SMF because we are computing the
 rates using the mean SFH at a given stellar mass as opposed to from a survey
 where rates within individual galaxies are not feasible to measure.
-
 % In the right panel of Fig.~\ref{fig:sfh_mzr} we plot the MZR at a selection of
 % redshifts as parametrized by
 % \citet[][see their equation 5]{Zahid2014}.\footnote{

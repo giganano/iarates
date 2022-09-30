@@ -5,11 +5,29 @@
 \section{Discussion and Conclusions}
 \label{sec:conclusions}
 
+% fig 5
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.47]{onezone_application.pdf}
+\caption{
+A comparison of one-zone galactic chemical evolution models based on
+\citet[][for details, see their~\S~2]{Johnson2020} with ($\gamma = -0.5$,
+solid) and without ($\gamma = 0$, dotted) metallicity-dependent SN Ia rates.
+Tracks denote the O and Fe abundances in the interstellar medium parametrized
+as a function of time with points marked at~$T = 2$, 4, 6, 8, and 10 Gyr.
+Insets illustrate [O/H] and [Fe/H] as a function of time in Gyr for the
+corresponding model.
+We note on each panel the choice of the outflow mass-loading factor~$\eta$ and
+the star formation efficiency timescale~$\tau_\star$.
+}
+\label{fig:onezone_app}
+\end{figure*}
+
 We have combined the mean SFHs of galaxies as predicted by the~\um~semi-analytic
 model of galaxy formation~\citep{Behroozi2019} with the empirical MZR as
 parametrized by~\citet{Zahid2014}.
 Under the assumption that metallicity effects are the reason for the high
-specific SN Ia rates observed in ASAS-SN~\citep{Brown2019, Gandhi2022} and
+specific SN Ia rates observed in ASAS-SN~\citep{Brown2019} and
 DES~\citep{Wiseman2021}, we have conducted simple numerical calculations to
 investigate the origin of this effect.
 Empirical constraints on the mass dependence of the specific SN Ia rate are
@@ -22,36 +40,25 @@ the SMF (see equation~\ref{eq:specia}).
 We find that the mean SFHs of galaxies of different stellar masses can account
 for only a factor of~$\sim$2 increase in the specific SN Ia rate between
 $10^{10}$ and~$10^{7.2}~\msun$.
-If the rate scales with stellar mass as~$\dot{N}_\text{Ia} / M_\star \sim
-M_\star^{-0.3}$, as suggested by Gandhi et al.'s~\citeyearpar{Gandhi2022}
-re-scaling of Brown et al.'s~\citeyearpar{Brown2019} measurements from the
-\citet{Bell2003} SMF to the~\citet{Baldry2012} SMF, then a metallicity
-dependence of~$Z^\gamma$ with~$\gamma \approx -0.5$ is required.
-If instead the steeper scaling of~$\dot{N}_\text{Ia} / M_\star \sim
-M_\star^{-0.5}$ derived by~\citet{Brown2019} is accurate, then stronger
+If the rate scales with stellar mass as~$\dot{\text{N}}_\text{Ia} / \mstar \sim
+\mstar^{-0.3}$, as suggested by the ASAS-SN~\citep{Brown2019} and DES
+\citep{Wiseman2021} measurements normalized with the~\citet{Baldry2012} SMF,
+then this is only~$\sim$30\% of the observed increase and an additional
+metallicity dependence of~$Z^\gamma$ with~$\gamma \approx -0.5$ is required.
+If instead the steeper scaling of~$\dot{\text{N}}_\text{Ia} / \mstar \sim
+\mstar^{-0.5}$ derived by~\citet{Brown2019} is accurate, then stronger
 scalings ($\gamma \approx -1.5$) are required, but~\citet{Gandhi2022}
-demonstrate that these scalings fail to reproduce the well-known correlations
-of [Mg/Fe] and [Fe/H] abundances as observed in M31 satellites
-by~\citet*{Vargas2014}.
-
-\begin{figure*}
-\centering
-\includegraphics[scale = 0.5]{onezone_application.pdf}
-\caption{
-Application to one-zone chemical evolution models based on that of
-\citet{Johnson2020}.
-}
-\label{fig:onezone_app}
-\end{figure*}
-
+demonstrate that scalings stronger than~$\gamma \lesssim -1$ fail to reproduce
+the well-known correlations of [Mg/Fe] and [Fe/H] abundances as observed in M31
+satellites by~\citet*{Vargas2014}.
+\par
 The realization that SN Ia rates could depend on metallicity with a
-$\gamma = -0.5$ dependence should have important implications for chemical
-evolution models of dwarf galaxies, known empirically to host both stellar
-populations~\citep{Gallazzi2005, Kirby2013} and gas reservoirs
-\citep{Tremonti2004, Zahid2011, Andrews2013, Zahid2014} with significantly
-sub-solar abundances.
-To demonstrate this, we briefly explore a handful of one-zone models of
-galactic chemical evolution based on~\citet{Johnson2020}.
+$\gamma = -0.5$ dependence has important implications for galactic chemical
+evolution models.
+To demonstrate this, we briefly explore a handful of one-zone models based
+on~\citet{Johnson2020} which predict the evolution of O (produced only in
+massive stars) and Fe (produced in both massive stars and SNe Ia); we refer
+to their~\S~2 for details and note the differences here.
 We take an exponential SFH with an e-folding timescale of~$\tau_\text{sfh} = 6$
 Gyr and our minimum delay of~$t_\text{D} = 100$ Myr before the onset of SNe Ia
 from a given stellar population.
@@ -59,11 +66,11 @@ For metallicity-dependent rates, we simply apply a~$(Z / Z_\odot)^{-0.5}$
 prefactor to their Fe yield of~$y_\text{Fe}^\text{Ia} = 0.0017$, which assumes
 that the shape of the DTD does not vary with metallicity -- only the
 normalization.
-We otherwise use the same evolutionary parameters
-as~\citet[][for details, see discussion in their~\S~2]{Johnson2020}.
+Otherwise, these models are the same as~\citet{Johnson2020}.
 \par
 The left-hand panel of Fig.~\ref{fig:onezone_app} illustrates a model where we
-take the same star formation efficiency timescale ($\tau_\star = 2$ Gyr) and
+take the same star formation efficiency timescale
+($\tau_\star \equiv M_\text{gas} / \dot{M}_\star = 2$ Gyr) and
 mass-loading factor describing the efficiency of outflows
 ($\eta \equiv \dot{M}_\text{out} / \dot{M}_\star = 2.5$) as in their fiducial
 model.
@@ -99,34 +106,51 @@ mass-loading factor as a consequence of the shallow gravity well.
 \par
 A scaling of~$\gamma = -0.5$ is in excellent agreement with the dependence of
 the close binary fraction measured in APOGEE~\citep{Moe2019}, which suggests
-that if a scaling of~$\dot{N}_\text{Ia} / M_\star \sim M_\star^{-0.3}$ is
+that if a scaling of~$\dot{\text{N}}_\text{Ia} / \mstar \sim \mstar^{-0.3}$ is
 accurate, then the elevated SN Ia rates in dwarf galaxies can be explained by a
 combination of their more extended SFHs and an increased binary fraction
 compared to their higher mass counterparts due to differences in their metal
 content.
 While~\citet{Gandhi2022} motivate their investigation from this viewpoint, here
 we take this argument one step further and postulate that this accounts for
-the~\textit{entire} increase in the specific SN Ia rate.
-This interpretation goes against the hypothesis raised by~\citet{Kistler2013}
-based on massive WDs at low metallicities, suggesting that this effect is
-subdominant compared to the increase in the binary fraction, which naturally
-accounts for a factor of~$\sim$3 over the~$\sim$1.5 decades in metallicity
-spanned by~$10^{7.2} - 10^{10}~\msun$ galaxies.
+the~\textit{entire} increase in the specific SN Ia rate because the binary
+fraction can naturally account for a factor of~$\sim$3 increase over
+the~$\sim$1.5 decades in metallicity spanned by~$\mstar = 10^{7.2} - 10^{10}
+\msun$ galaxies.
+This interpretation goes against the hypothesis raised by~\citet{Kistler2013},
+suggesting that the increased mass of WDs at low metallicities is a subdominant
+effect.
 Nonetheless, massive WDs at low metallicity may be an important component in
 the theoretical understanding of the specific SN Ia rate as a function of
-stellar mass if the steeper~$\sim M_\star^{-0.5}$ scaling from~\citet{Brown2019}
-is accurate.
+stellar mass if the steeper~$\sim \mstar^{-0.5}$ scaling inferred
+by~\citet{Brown2019} is accurate.
+\par
+At first glance, an inverse dependence of SN Ia rates on metallicity may seem
+at odds with the recent realization by~\citet{Holoien2022} that dwarf galaxy
+hosts of SNe Ia detected by ASAS-SN tend to be oxygen-rich relative to similar
+mass galaxies.
+However, SN hosts detected by any survey are likely not a representative sample
+of the underlying galaxy population because, due to the steeply declining
+nature of the DTD~\citep[e.g.,][]{Maoz2012a}, the intrinsically highest SN Ia
+rates should be in systems which experienced a recent starburst ($\lesssim$1
+Gyr ago).
+Since oxygen is produced mostly by massive stars with short lifetimes
+\citep*[e.g.,][]{Hurley2000, Johnson2019}, these galaxies should also have a
+higher-than-average oxygen abundance~\citep[e.g.,][]{Johnson2020}.
+In other words, observed SN Ia hosts may be slightly metal-rich on average, but
+one may arrive at a different conclusion if it were feasible to measure rates
+within individual galaxies.
 \par
 The calculations we have presented here are simplified in several regards.
 First, we have assumed the characteristic SFH predicted by a semi-analytic
 model of galaxy formation at all stellar masses.
-This approximation is reasonable for computing expected means trends, but in
+This approximation is reasonable for computing expected mean trends, but in
 principle, the underlying galaxy population should occupy a distribution of
 SFHs.
 \citet{Brown2019} do not find strong evidence that the specific SN Ia rate
 depends on star formation activity at the time of observation, but we do not
-investigate this here because tracking galaxy-by-galaxy SFHs would pose an
-increase in our computational expense of multiple orders of magnitude.
+investigate this here because predicted SFHs on a galaxy-by-galaxy basis are
+known to be highly model-dependent~\citep[e.g.][]{Li2020, Hu2022}.
 Second, we have assumed that all galaxies lie perfectly on the MZR, which
 should also be sufficient for computing mean trends.
 However, similar to their SFHs and largely as a consequence thereof, galaxies

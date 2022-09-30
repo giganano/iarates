@@ -8,23 +8,26 @@
 % fig 2
 \begin{figure*}
 \centering
-\includegraphics[scale = 0.55]{umachine_iarate_metdep.pdf}
-\includegraphics[scale = 0.56]{binaries_zscaling.pdf}
+\includegraphics[scale = 0.60]{umachine_iarate_metdep.pdf}
+\includegraphics[scale = 0.61]{binaries_zscaling.pdf}
 \caption{
-\textbf{Left}: Theoretically predicted scalings of the specific SN Ia rate with
-galaxy stellar mass (see equation~\ref{eq:specia}) assuming the mean SFHs
-reported by~\um~and a single power-law dependence on metallicity~$Z^\gamma$
-with~$\gamma = 0$ (i.e. no dependence; black),~$\gamma = -0.2$ (red),
-$\gamma = -0.5$ (green),~$\gamma = -1$ (blue), and~$\gamma = -2$ (purple).
+\textbf{Left}: Predicted scalings of the specific SN Ia rate with galaxy
+stellar mass (see equation~\ref{eq:specia}) assuming the mean~\um~SFHs and a
+single power-law~$Z^\gamma$ metallicity-dependence with~$\gamma = 0$ (i.e. no
+dependence; black),~$\gamma = -0.2$ (red), $\gamma = -0.5$ (green),
+$\gamma = -1$ (blue), and~$\gamma = -2$ (purple).
 Following~\citet{Brown2019} and~\citet{Gandhi2022}, we normalize all rates to
 a value of 1 at~$\mstar = 10^{10}~\msun$.
+Black dashed lines denote the scalings of~$\dot{\text{N}}_\text{Ia} / \mstar
+\sim \mstar^{-0.5}$ and~$\dot{\text{N}}_\text{Ia} / \mstar \sim \mstar^{-0.3}$
+derived when normalizing the observed rates by the~\citet{Bell2003} and
+\citet{Baldry2012} SMFs, respectively.
 \textbf{Right}: The same metallicity scalings as in the left panel in
 comparison to the close binary fractions observed in APOGEE
-\citep[][black dashed line with error bars]{Moe2019}.
-All metallicity scalings are normalized to the observed binary fraction of 10\%
-at~$\log_{10}(Z / Z_\odot) = +0.5$.
+\citep[][black dashed line with error bars]{Moe2019} normalized to the observed
+binary fraction of 10\% at~$\log_{10}(Z / Z_\odot) = +0.5$.
 We mark the characteristic metallicity of a~$\mstar = 10^{7.2}~\msun$ galaxy
-($\log_{10}(Z / Z_\odot) \approx -0.6$) according to the~\citet{Zahid2014} MZR
+($\log_{10}(Z / Z_\odot) \approx -0.6$) based on the~\citet{Zahid2014} MZR
 with a black dotted line.
 }
 \label{fig:specia_metdep}
@@ -67,7 +70,7 @@ scaling with metallicity.
 % decreasing stellar mass can be explained entirely by dwarf galaxies having more
 % extended SFHs and a higher close binary fraction due to their lower abundances.
 If one instead takes~$Z \approx 0.1Z_\odot$ for a~$\sim$$10^{7.2}~\msun$ galaxy
-as suggest by~\citet{Andrews2013}, then there is a slight tension between a
+as suggested by~\citet{Andrews2013}, then there is a slight tension between a
 $\gamma = -0.5$ scaling and the close binary fraction measured by
 \citet{Moe2019}.
 There is some additional freedom to adjust the metallicity dependence beyond
@@ -82,10 +85,11 @@ postuled by~\citet{Kistler2013}.
 % \citet{Kistler2013}.
 Nonetheless, the scaling of the close binary fraction with metallicity can
 explain the majority of the effect in this case anyway.
-If instead the~$\sim M_\star^{-0.5}$ found by~\citet{Brown2019} is accurate,
+If instead the~$\sim$$\mstar^{-0.5}$ found by~\citet{Brown2019} is accurate,
 then the required~$\gamma \approx -1.5$ scaling cannot be explained by the
 close binary fraction alone as it would reach unphysical values ($>1$) within
 the range of observed metallicities.
+\par
 % Such scalings are disfavored by~\citet{Gandhi2022} because they fail to
 % reproduce the well-known correlations between stellar [Mg/Fe] and [Fe/H]
 % abundances as observed in M31 satellites by~\citep*{Vargas2014} but are still
@@ -94,31 +98,6 @@ the range of observed metallicities.
 % stars;~\citealp{Maoz2012b}).
 % In the next section, we discuss potential observational diagnostics of
 % a~$Z^{-0.5}$ metallicity dependence or lack thereof.
-
-% fig 3
-\begin{figure*}
-\centering
-\includegraphics[scale = 0.56]{umachine_iarate_redshiftevol.pdf}
-\caption{
-The specific SN Ia rate as a function of stellar mass with ($\gamma = -0.5$,
-left) and without ($\gamma = 0$, right) a metallicity dependence at redshifts
-$z = 0$ (black),~$z = 0.5$ (blue), and~$z = 1$ (red).
-Following~\citet{Brown2019} and~\citet{Gandhi2022}, we normalize all rates to
-a value of 1 at~$\mstar = 10^{10}~\msun$.
-In the right panel, we artificially amplify the rates by a factor of
-$(M_\star / 10^{10}~\msun)^{-0.15}$ to bring the~$z = 0$ predictions into
-better agreement with an~$\sim M_\star^{-0.3}$ scaling as predicted by the
-$\gamma = -0.5$ case.
-Stellar masses correspond to the appropriate redshift -- that is, the rates at,
-e.g.,~$z = 1$ are plotted against the~$z = 1$ stellar masses and not the
-present day stellar masses.
-We show the unmodified rates as dotted lines (the black solid line in the left
-panel and the black dotted line in the right panel are the same as the green
-line and black solid line in the left panel of Fig.~\ref{fig:specia_metdep}).
-}
-\label{fig:specia_zdep}
-\end{figure*}
-
 Due to the evolution of the MZR, the mass dependence of the specific SN Ia rate
 at different redshifts could empirically distinguish between~$\gamma = 0$ and
 $\gamma = -0.5$.
@@ -149,6 +128,15 @@ $\sim 10^{7.2}~\msun$.
 This difference arises because the metallicities of dwarf galaxies decrease
 with increasing redshift and~$\gamma = -0.5$ allows them to sustain higher
 SN Ia rates than if~$\gamma = 0$.
+Empirically, the cosmic SN Ia rate increases with redshift
+\citep[e.g.][]{Graur2014}, and we have verified that our framework reproduces
+this result by integrating over the SMF (similar to equation
+\ref{eq:hostmassdist} below).
+Given this result and the lower stellar masses of the host galaxies at high
+redshift, one might expect the trend to steepen with increasing~$z$.
+The slope instead decreases here because the lines in Fig.~\ref{fig:specia_zdep}
+are moving to the right with time as galaxies grow in mass, and we normalize to
+1 at~$10^{10}~\msun$ at all redshifts.
 % Distinguishing between these models empirically, however, would require a
 % considerably precise SMF at redshift~$z = 1$.
 % Factors of 2 and 3 between~$10^{7.2}$ and~$10^{10}~\msun$ are produced by
@@ -202,15 +190,39 @@ at~$z \approx 1$.
 % above, achieving the level of precision required for this empirical test could
 % be challenging, even with these instruments.
 
+% fig 3
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.65]{umachine_iarate_redshiftevol.pdf}
+\caption{
+The specific SN Ia rate normalized to~$1$ at~$10^{10}~\msun$ as a function of
+stellar mass with ($\gamma = -0.5$, left) and without ($\gamma = 0$, right) a
+metallicity dependence at redshifts $z = 0$ (black),~$z = 0.5$ (blue),
+and~$z = 1$ (red).
+In the right panel, we artificially scale the rates by a factor of
+$(\mstar / 10^{10}~\msun)^{-0.15}$ to bring the~$z = 0$ predictions into
+better agreement with an~$\sim \mstar^{-0.3}$ scaling as predicted by the
+$\gamma = -0.5$ case.
+Stellar masses correspond to the appropriate redshift (i.e., the rates for
+$z = 1$ use the~$z = 1$ stellar masses and not the present-day stellar
+masses).
+We show the unmodified rates as dotted lines (the black solid line in the left
+panel and the black dotted line in the right panel are the same as the green
+line and black solid line in the left panel of Fig.~\ref{fig:specia_metdep}).
+}
+\label{fig:specia_zdep}
+\end{figure*}
+
+% fig 4
 \begin{figure}
 \centering
 \includegraphics[scale = 0.55]{ia_massdist.pdf}
 \caption{
 The predicted stellar mass distribution of SN Ia host galaxies in an
 untargeted survey (see equation~\ref{eq:hostmassdist}) with the
-\citet[][dotted]{Bell2003} and~\citet[][solid]{Baldry2012} SMFs combined with
-both metallicity-dependent ($\gamma = -0.5$, red) and metallicity-independent
-rates ($\gamma = 0$, blue).
+\citet[][dotted]{Bell2003} and~\citet[][solid]{Baldry2012} SMFs for both
+metallicity-dependent ($\gamma = -0.5$, red) and metallicity-independent rates
+($\gamma = 0$, blue).
 All distributions are normalized to a maximum value of 1.
 }
 \label{fig:hostmassdist}
@@ -228,15 +240,15 @@ Although this empirical measurement does not depend on the SMF, our theoretical
 prediction does because we must take into account the relative abundances of
 galaxies of different stellar masses.
 The observed rate in a bin of stellar mass can be expressed as the product
-of the characteristic rate~$\dot{N}_\text{Ia}$ at a given stellar mass and
-the integral of the SMF~$\Phi(M_\star)$ over the bin in stellar mass according
-to
+of the characteristic rate~$\dot{\text{N}}_\text{Ia}$ at a given stellar mass
+and the integral of the SMF~$\Phi(\mstar)$ over the bin in stellar mass
+according to
 \begin{equation}
 \dot{N}_\text{Ia,cosmic}(M_\star | \gamma) = \dot{N}_\text{Ia}(M_\star | \gamma)
 \int_{M_\star}^{M_\star + dM_\star} \Phi(M_\star) dM_\star,
 \label{eq:hostmassdist}
 \end{equation}
-where~$\dot{N}_\text{Ia}$ is given by the numerator of
+where~$\dot{\text{N}}_\text{Ia}$ is given by the numerator of
 equation~\refp{eq:specia}.
 We plot this distribution in Fig.~\ref{fig:hostmassdist} for each combination
 of~$\gamma = 0$ and~$-0.5$ with the SMFs parametrized by~\citet{Bell2003}
@@ -248,14 +260,14 @@ targeted surveys like the Lick Observatory SN Search~\citep[LOSS;][]{Li2000,
 Filippenko2001} would be impacted by selection criteria.
 \par
 According to this formalism, galaxies with stellar masses of
-$M_\star \approx 3-5 \times10^{10}~\msun$ should dominate the detected SN Ia
+$\mstar \approx 3-5 \times10^{10}~\msun$ should dominate the detected SN Ia
 events for all choices of the SMF and~$\gamma$.
 This peak arises as the optimal stellar mass which is high enough to produce a
 large number of WDs, but being near the ``knee'' of the SMF, is not so high
 that the galaxies themselves are rare.
 For a given choice of the SMF, $\gamma = -0.5$ indeed enhances the low-mass
 tail of the distribution, increasing the number of observed SN Ia events in
-$M_\star \approx 10^{7.2}~\msun$ galaxies by a factor of~$\sim$3 relative to
+$\mstar \approx 10^{7.2}~\msun$ galaxies by a factor of~$\sim$3 relative to
 $\gamma = 0$.
 However, Fig.~\ref{fig:hostmassdist} indicates that this observed distribution
 is a considerably better diagnostic of the SMF itself as opposed to the
