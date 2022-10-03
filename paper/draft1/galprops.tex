@@ -41,20 +41,19 @@ formalism~\citep{Press1974, Bond1991} to generate halo merger trees and push
 the lower stellar mass limit of their model down to~$\mstar \approx 10^7~\msun$
 \citep[e.g.][]{Somerville2015b}, an advantage of~\um~is that the high mass
 resolution of~\textit{Bolshoi-Planck} and~\textit{Multi-Dark Planck 2}
-allows merger trees down to~$\mstar = 10^{7.2}~\msun$ to be obtained directly
-from the simulations.
+simulations allows merger trees down to~$\mstar = 10^{7.2}~\msun$ to be
+obtained directly from the simulations.
 Conveniently, this limit is approximately the lowest mass for which there are
 empirical constraints on the specific SN Ia rate from ASAS-SN~\citep{Brown2019}
 and DES~\citep{Wiseman2021}.
-In the interest of relating these predictions to data from ASAS-SN
-\citep{Shappee2014, Kochanek2017}, an untargeted survey, we take the full
-galaxy sample from~\um, including both star forming and quenched galaxies as
+In the interest of relating these predictions to data from the untargeted
+ASAS-SN survey~\citep{Shappee2014, Kochanek2017}, we take the full galaxy
+sample from~\um, including both star forming and quenched galaxies as
 well as both centrals and satellites, though centrals are the dominant
 population across the full stellar mass range.
 \par
-In the left panel of Fig.~\ref{fig:sfh_mzr}, we plot the best-fit mean SFH as a
-function of lookback time in four narrow bins of observed stellar mass taken
-from~\um.
+In the left panel of Fig.~\ref{fig:sfh_mzr}, we show the best-fit mean SFH as a
+function of lookback time in four narrow bins of present day stellar mass.
 In general, low stellar mass galaxies have more extended SFHs than their
 higher mass counterparts.
 This effect is sufficiently strong that for stellar masses of
@@ -63,23 +62,24 @@ while~$\sim$$10^{10.5}~\msun$ galaxies experienced their fastest star formation
 long ago.
 \par
 We adopt a DTD that scales with the age of a stellar population as~$\tau^{-1}$
-as suggested by comparisons of the cosmic SFH with the volumetric SN Ia rate
-as a function of redshift (\citealp{Maoz2012a};~\citealp*{Maoz2012b};
-\citealp{Graur2013, Graur2014}).
+starting at a delay time~$t_\text{D} = 100$ Myr as suggested by comparisons of
+the cosmic SFH with the volumetric SN Ia rate as a function of redshift
+(\citealp{Maoz2012a};~\citealp*{Maoz2012b};~\citealp{Graur2013, Graur2014}).
 We have reconducted our analysis using alternative choices of the power-law
 index as well as an exponential DTD with an e-folding timescale of
 $\tau_\text{Ia} = 1.5$ Gyr and found similar conclusions in all cases.
+We do not consider metallicity-dependent variations in the shape of the DTD
+here, instead focusing on the overall normalization.
 In principle, the minimum delay of the DTD could be as short as~$\sim$40 Myr if
 WDs are produced by~$\lesssim$8~\msun~stars~\citep*[e.g.,][]{Hurley2000}, and
 perhaps even shorter at low metallicity if the total metal content of a star
-significantly impacts its lifetime as in, e.g.,~\citet{Kodama1997} and
-\citet{Vincenzo2016}.
+significantly impacts its lifetime~\citep[e.g.,][]{Kodama1997, Vincenzo2016}.
 However, if SNe Ia require some additional time following WD formation, the
 minimum delay will be longer.
 Since we are interested in the first-order effects of variations in the SFH on
 specific SN Ia rates, we assume a value of~$t_\text{D} = 100$ Myr.
 We have also reproduced our calculations with both~$t_\text{D} = 40$ Myr and
-$t_\text{D} = 150$ Myr and found similar results in both cases.
+$t_\text{D} = 150$ Myr and found similar results.
 \par
 % \par
 % Although the details of the SN Ia DTD have been a topic of active inquiry for
@@ -123,8 +123,8 @@ $\tau$, the specific SN Ia rate at a stellar mass~$\mstar$ is
 \end{equation}
 where~$T = 13.2$ Gyr is the time elapsed between the onset of star formation
 and the present day.
-To investigate the effects of metallicity, we add a power-law
-$Z(\mstar)^\gamma$ where~$Z$ is given by the MZR.
+To investigate the effects of metallicity, we add a power-law metallicity
+scaling~$Z(\mstar)^\gamma$ where~$Z$ is given by the MZR.
 We are only interested in the scaling of the rates with~\mstar, so we normalize
 all rates to unity at~$\mstar = 10^{10}~\msun$ following~\citet{Brown2019}.
 Although the denominator of equation~\refp{eq:specia} in detail should depend
@@ -140,13 +140,13 @@ $t = T - \tau$.
 The middle panel of Fig.~\ref{fig:sfh_mzr} shows equation~\refp{eq:specia} as
 a function of the e-folding timescale~$\tau_\text{sfh}$ assuming~$\gamma = 0$.
 The specific SN Ia rate is slowest in the limiting case of a single episode of
-star formation (i.e.~$\tau_\text{sfh} = 0$), rises steeply until
+star formation (i.e.,~$\tau_\text{sfh} \rightarrow 0$), rises steeply until
 $\tau_\text{sfh} \approx 10$ Gyr, and then flattens once
 $\tau_\text{sfh} \gtrsim T$.
 A higher specific SN Ia rate as observed in dwarf galaxies is therefore a
 natural consequence of their more extended SFHs, though we demonstrate below
-that this effect accounts for only a factor of~$\sim$2 between~$10^{7.2}$ and
-$10^{10} \msun$.
+that this effect accounts for only a factor of~$\sim$2 increase in the rate
+between~$10^{7.2}$ and~$10^{10} \msun$.
 % \par
 % Not only do dwarf galaxies have more extended SFHs, but the empirical MZR
 % indicates that they also have a lower metal content~\citep{Tremonti2004,
@@ -188,7 +188,7 @@ Therefore, the normalization of the MZR is irrelevant and what determines the
 mass dependence in our calculations is the metallicity relative to that of a
 $10^{10}~\msun$ galaxy.
 In the interest of exploring SN Ia rates at redshifts of~$z = 0.5$ and~$z = 1$,
-we retain the~\citet{Zahid2014} formalism in~\S~\ref{sec:predictions} below
+we use the~\citet{Zahid2014} formalism in~\S~\ref{sec:predictions} below
 where we combine the mean~\um~SFHs with the observed MZR in the
 $10^{7.2} - 10^{12}~\msun$ mass range.
 Given a present-day stellar mass, we compute its SFH as a function of
