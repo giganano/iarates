@@ -5,6 +5,24 @@
 \section{Discussion and Conclusions}
 \label{sec:conclusions}
 
+% fig 5
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.47]{onezone_application.pdf}
+\caption{
+A comparison of one-zone galactic chemical evolution models based on
+\citet[][for details, see their~\S~2]{Johnson2020} with ($\gamma = -0.5$,
+solid) and without ($\gamma = 0$, dotted) metallicity-dependent SN Ia rates.
+Tracks denote the O and Fe abundances in the interstellar medium parametrized
+as a function of time with points marked at~$T = 2$, 4, 6, 8, and 10 Gyr.
+Insets illustrate [O/H] and [Fe/H] as a function of time in Gyr for the
+corresponding model.
+We note on each panel the choice of the outflow mass-loading factor~$\eta$ and
+the star formation efficiency timescale~$\tau_\star$.
+}
+\label{fig:onezone_app}
+\end{figure*}
+
 Building on LOSS~\citep{Li2011},~\citet{Brown2019} and~\citet{Wiseman2021}
 found the SN Ia rates rise steeply toward low stellar mass.
 The exact slope depends on the adopted SMF, with
@@ -43,23 +61,24 @@ $\dot{\text{N}} / \mstar \sim \mstar^{-0.5}$ scaling.
 % well-known correlations of [Mg/Fe] and [Fe/H] abundances~\citet{Gandhi2022}.
 \par
 A scaling of~$\gamma = -0.5$ is in excellent agreement with the dependence of
-the close binary fraction measured in APOGEE~\citep{Moe2019}, which suggests
-that if a scaling of~$\dot{\text{N}}_\text{Ia} / \mstar \sim \mstar^{-0.3}$ is
-accurate, then the elevated SN Ia rates in dwarf galaxies can be explained by a
-combination of their more extended SFHs and an increased binary fraction
-compared to their higher mass counterparts due to differences in their metal
-content.
+the close binary fraction measured in APOGEE, which increases from~$\sim$10\%
+at~$\sim$$3Z_\odot$ to~$\sim$40\% at~$\sim$$0.1Z_\odot$~\citep{Moe2019}.
+This close match suggests that if a scaling of
+$\dot{\text{N}}_\text{Ia} / \mstar \sim \mstar^{-0.3}$ is accurate, then the
+elevated SN Ia rates in dwarf galaxies can be explained by a combination of
+their more extended SFHs and an increased binary fraction compared to their
+higher mass counterparts due to differences in metallicity.
 While~\citet{Gandhi2022} motivate their investigation from this viewpoint, here
 we take this argument one step further and postulate that this accounts for
 the~\textit{entire} increase in the specific SN Ia rate because the binary
 fraction can naturally account for a factor of~$\sim$3 increase over
-the~$\sim$1.5 decades in metallicity spanned by~$\mstar = 10^{7.2} - 10^{10}
+the~$\sim$1 decade in metallicity spanned by~$\mstar = 10^{7.2} - 10^{10}
 \msun$ galaxies.
 The suggestion by~\citet{Kistler2013} that the increased WD mass at low
 metallicities drives the effect is likely a subdominant effect.
 High mass WDs at low~$Z$ may be an important component if the
 steeper~$\sim \mstar^{-0.5}$ scaling inferred with the~\citet{Bell2003} SMF is
-accurate.
+correct.
 \par
 At first glance, an inverse dependence of SN Ia rates on metallicity may seem
 at odds with the results in~\citet{Holoien2022} finding that dwarf galaxy
@@ -72,13 +91,14 @@ systems which experienced a recent starburst ($\lesssim$1 Gyr ago).
 Since oxygen is produced by massive stars with short lifetimes
 \citep*[e.g.,][]{Hurley2000, Johnson2019}, these galaxies should also have a
 higher-than-average oxygen abundance~\citep[see, e.g.,][]{Johnson2020}.
-In other words, SN Ia hosts should be more metal-rich than the average galaxy.
+In other words, SN Ia hosts at fixed mass should be more metal-rich than the
+average galaxy.
 \par
 The calculations we have presented here are simplified in several regards.
 We assumed the characteristic SFH predicted by a semi-analytic model of
 galaxy formation at all stellar masses.
-Our parametrization of the MZR involves no intrinsic scatter, and by taking the
-\citet{Zahid2014} at face value for use in a power-law scaling implicitly
+Our parametrization of the MZR includes no intrinsic scatter, and taking the
+\citet{Zahid2014} MZR at face value for use in a power-law scaling implicitly
 assumes that all SNe Ia arise from stellar populations near the gas-phase
 abundance.
 Although in principle galaxies populate distributions of finite width in each
@@ -88,16 +108,11 @@ predicting average trends.
 Although current surveys lack the depth required to pin down SN rates across
 multiple decades of stellar mass at~$z = 1$, the sample sizes necessary to do
 so may be available from next-generation facilities.
-First and foremost, the Nancy Grace Roman Space Telescope (\citealp{Spergel2013,
-Spergel2015}; formerly the Wide Field Infrared Survey Telescope -- WFIRST),
-among other motivations, was designed for exactly this purpose in order to
-constrain the dark energy equation of state using high-redshift SNe Ia.
-The Roman~\textit{H} band in particular has excellent prospects for discovering
-all classes of SNe at redshifts as high as~$z \gtrsim 2$ and beyond
-\citep{Petrushevska2016}.
-The recently launched James Webb Space Telescope~\citep[JWST;][]{Gardner2006}
-can discover SNe as distant as~$z \gtrsim 4$.
-\par
+First and foremost, the Nancy Grace Roman Space Telescope~\citep{Spergel2013,
+Spergel2015} will obtain large samples of SNe.
+Roman has excellent prospects for discovering all classes of SNe at redshifts
+as high as~$z \gtrsim 2$ and beyond~\citep{Petrushevska2016}.
+% \par
 The difficulty in empirically constraining the specific SN Ia rate at
 $z \approx 1$ instead comes from uncertainties in the SMF.
 Even at~$z = 0$, these measurements are difficult due to the flux-limited
@@ -116,11 +131,11 @@ A metallicity dependence of~$Z^{-0.5}$ strongly impacts the evolution of Fe
 in one-zone models of galactic chemical evolution.
 For a given choice of model parameters, the only regions of chemical space
 where~$\gamma = 0$ and~$\gamma = -0.5$ make similar predictions is at
-near-solar abundances and along the high [O/Fe] plateau.
+near-Solar abundances and along the high [O/Fe] plateau.
 This indicates that best-fit values obtained from fitting one-zone models to
 abundances could be significantly impacted by the inclusion of
 metallicity-dependent SN Ia rates.
-The strongest impact is for dwarf galaxies where the abundances are low and
+The strongest impact is for dwarf galaxies, where the abundances are low and
 the higher yields can shift the endpoint of the evolutionary track by~$\sim$0.5
 dex.
 % The calculations we have presented here are simplified in several regards.

@@ -40,14 +40,14 @@ While some semi-analytic models have used the extended Press-Schechter
 formalism~\citep{Press1974, Bond1991} to generate halo merger trees and push
 the lower stellar mass limit of their model down to~$\mstar \approx 10^7~\msun$
 \citep[e.g.][]{Somerville2015b}, an advantage of~\um~is that the high mass
-resolution of~\textit{Bolshoi-Planck} and~\textit{Multi-Dark Planck 2}
+resolution of the~\textit{Bolshoi-Planck} and~\textit{Multi-Dark Planck 2}
 simulations allows merger trees down to~$\mstar = 10^{7.2}~\msun$ to be
 obtained directly from the simulations.
 Conveniently, this limit is approximately the lowest mass for which there are
 empirical constraints on the specific SN Ia rate from ASAS-SN~\citep{Brown2019}
 and DES~\citep{Wiseman2021}.
-In the interest of relating these predictions to data from the untargeted
-ASAS-SN survey~\citep{Shappee2014, Kochanek2017}, we take the full galaxy
+To relate these predictions to data from the untargeted ASAS-SN
+survey~\citep{Shappee2014, Kochanek2017}, we take the full galaxy
 sample from~\um, including both star forming and quenched galaxies as
 well as both centrals and satellites, though centrals are the dominant
 population across the full stellar mass range.
@@ -65,7 +65,7 @@ We adopt a DTD that scales with the age of a stellar population as~$\tau^{-1}$
 starting at a delay time~$t_\text{D} = 100$ Myr as suggested by comparisons of
 the cosmic SFH with the volumetric SN Ia rate as a function of redshift
 (\citealp{Maoz2012a};~\citealp*{Maoz2012b};~\citealp{Graur2013, Graur2014}).
-We have reconducted our analysis using alternative choices of the power-law
+We conducted our analysis using alternative choices of the power-law
 index as well as an exponential DTD with an e-folding timescale of
 $\tau_\text{Ia} = 1.5$ Gyr and found similar conclusions in all cases.
 We do not consider metallicity-dependent variations in the shape of the DTD
@@ -78,8 +78,8 @@ However, if SNe Ia require some additional time following WD formation, the
 minimum delay will be longer.
 Since we are interested in the first-order effects of variations in the SFH on
 specific SN Ia rates, we assume a value of~$t_\text{D} = 100$ Myr.
-We have also reproduced our calculations with both~$t_\text{D} = 40$ Myr and
-$t_\text{D} = 150$ Myr and found similar results.
+In calculations using both~$t_\text{D} = 40$ Myr and~$t_\text{D} = 150$ Myr,
+we found similar results.
 \par
 % \par
 % Although the details of the SN Ia DTD have been a topic of active inquiry for
@@ -133,13 +133,14 @@ constant term which can safely be neglected in the interest of computing
 relative rates ($\approx$40\% for a~\citealt{Kroupa2001} IMF; see discussion
 in~\S\S~2.2 and 3.7 of~\citealt*{Weinberg2017}).
 \par
-To qualitatively illustrate how the specific SN Ia rate scales with how prompt
-or extended the SFH is, we consider the simple example of a linear-exponential
+To qualitatively illustrate how the specific SN Ia rate scales with the
+timescale over which star formation occurs, we consider the simple example of a
+linear-exponential
 parametrization~$\dot{M}_\star \propto te^{-t/\tau_\text{sfh}}$ where
 $t = T - \tau$.
 The middle panel of Fig.~\ref{fig:sfh_mzr} shows equation~\refp{eq:specia} as
 a function of the e-folding timescale~$\tau_\text{sfh}$ assuming~$\gamma = 0$.
-The specific SN Ia rate is slowest in the limiting case of a single episode of
+The specific SN Ia rate is lowest in the limiting case of a single episode of
 star formation (i.e.,~$\tau_\text{sfh} \rightarrow 0$), rises steeply until
 $\tau_\text{sfh} \approx 10$ Gyr, and then flattens once
 $\tau_\text{sfh} \gtrsim T$.
@@ -168,8 +169,8 @@ between~$10^{7.2}$ and~$10^{10} \msun$.
 The right panel of Fig.~\ref{fig:sfh_mzr} shows the MZR parametrized by
 \citet[][see their equation 5]{Zahid2014}\footnote{
 	We have transformed from their~$\log_{10}\text{(O/H)}$ measurements to the
-	logarithmic abundance relative to the sun~$\log_{10}(Z / Z_\odot)$ assuming
-	the solar oxygen abundance derived by~\citet{Asplund2009}.
+	logarithmic abundance relative to the Sun~$\log_{10}(Z / Z_\odot)$ assuming
+	the Solar oxygen abundance derived by~\citet{Asplund2009}.
 } at redshifts~$z = 0$, 0.5 and 1 in comparison to the~\citet{Andrews2013}
 parametrization at~$z = 0$.
 Although~\um~allows us to investigate these effects at stellar masses as low as
@@ -180,33 +181,33 @@ $\mstar \approx 10^9 - 10^{11}~\msun$ galaxies.
 in bins of stellar mass extending as low as~$\sim$$10^{7.4}~\msun$.
 Relative to~\citet{Zahid2014}, the~\citet{Andrews2013} parametrization has a
 lower plateau but otherwise a similar slope and turnover mass.
-We find similar results in~\S~\ref{sec:predictions} below using both
-parametrizations because, following~\citet{Brown2019}, we quantify the specific
-SN Ia rate as a function of stellar mass normalized to 1 at
-$\mstar = 10^{10}~\msun$.
-Therefore, the normalization of the MZR is irrelevant and what determines the
-mass dependence in our calculations is the metallicity relative to that of a
-$10^{10}~\msun$ galaxy.
-In the interest of exploring SN Ia rates at redshifts of~$z = 0.5$ and~$z = 1$,
-we use the~\citet{Zahid2014} formalism in~\S~\ref{sec:predictions} below
-where we combine the mean~\um~SFHs with the observed MZR in the
-$10^{7.2} - 10^{12}~\msun$ mass range.
+Because we simply normalize the rates to unity at~$\mstar = 10^{10}~\msun$,
+only the shape of the MZR matters, and we find similar results using both
+parametrizations.
+% We find similar results in~\S~\ref{sec:predictions} below using both
+% parametrizations because, following~\citet{Brown2019}, we quantify the specific
+% SN Ia rate as a function of stellar mass normalized to 1 at
+% $\mstar = 10^{10}~\msun$.
+% Therefore, the normalization of the MZR is irrelevant and what determines the
+% mass dependence in our calculations is the metallicity relative to that of a
+% $10^{10}~\msun$ galaxy.
+In order to estimate SN Ia rates at redshifts of~$z = 0.5$ and~$z = 1$,
+we use the redshift-dependent~\citet{Zahid2014} formalism
+in~\S~\ref{sec:predictions}.
 Given a present-day stellar mass, we compute its SFH as a function of
 lookback time by interpolating between the stellar mass and snapshot times
-included in the~\um~predictions.\footnote{
-	\url{https://www.peterbehroozi.com/data.html}. We interpolate linearly in
-	both stellar mass and lookback time and not in the log of either
-	quantity.
-}
+included in the~\um~predictions.
 We then compute the specific SN Ia rate according to equation~\refp{eq:specia}
 given the implied SFH and and a~$\tau^{-1}$ DTD, amplifying the rate by a
 factor of~$Z^\gamma$ where the metallicity~$Z$ is computed from the
 \citet{Zahid2014} MZR.
-While the observationally inferred scaling with stellar mass is significantly
-dependent upon the assumed SMF~\citep{Gandhi2022}, we emphasize that this
-theoretical approach is independent of the SMF because we are computing the
-rates using the mean SFH at a given stellar mass as opposed to from a survey
-where rates within individual galaxies are not feasible to measure.
+Because these calculations are simply using the~\um~SFHs, the results are
+unaffected by the SMF dependence of the observational estimates.
+% While the observationally inferred scaling with stellar mass is significantly
+% dependent upon the assumed SMF~\citep{Gandhi2022}, we emphasize that this
+% theoretical approach is independent of the SMF because we are computing the
+% rates using the mean SFH at a given stellar mass as opposed to from a survey
+% where rates within individual galaxies are not feasible to measure.
 % In the right panel of Fig.~\ref{fig:sfh_mzr} we plot the MZR at a selection of
 % redshifts as parametrized by
 % \citet[][see their equation 5]{Zahid2014}.\footnote{
