@@ -1,5 +1,5 @@
 
-\documentclass[ms.tex]{subfiles}
+\documentclass[foo.tex]{subfiles}
 \begin{document}
 
 \section{Galactic Properties}
@@ -8,9 +8,9 @@
 % fig 1
 \begin{figure*}
 \centering
-\includegraphics[scale = 0.43]{umachine_sfhs.pdf}
-\includegraphics[scale = 0.42]{iarate_vs_tausfh.pdf}
-\includegraphics[scale = 0.42]{mzr.pdf}
+\includegraphics[scale = 0.45]{umachine_sfhs.pdf}
+\includegraphics[scale = 0.44]{iarate_vs_tausfh.pdf}
+\includegraphics[scale = 0.44]{mzr.pdf}
 \caption{
 \textbf{Left}: The best-fit mean SFHs of the~\um~galaxies with present-day
 stellar masses of $\mstar = 10^{7.5 \pm 0.1}$ (black),~$10^{8.5 \pm 0.1}$ (red),
@@ -57,7 +57,7 @@ function of lookback time in four narrow bins of present day stellar mass.
 In general, low stellar mass galaxies have more extended SFHs than their
 higher mass counterparts.
 This effect is sufficiently strong that for stellar masses of
-$\sim$$10^{7.5}~\msun$, typical SFRs are still increasing at the present day
+$\sim$$10^{7.5}~\msun$, typical SFRs are still increasing at the present day,
 while~$\sim$$10^{10.5}~\msun$ galaxies experienced their fastest star formation
 long ago.
 \par
@@ -194,6 +194,7 @@ parametrizations.
 In order to estimate SN Ia rates at redshifts of~$z = 0.5$ and~$z = 1$,
 we use the redshift-dependent~\citet{Zahid2014} formalism
 in~\S~\ref{sec:predictions}.
+\par
 Given a present-day stellar mass, we compute its SFH as a function of
 lookback time by interpolating between the stellar mass and snapshot times
 included in the~\um~predictions.
@@ -202,7 +203,9 @@ given the implied SFH and and a~$\tau^{-1}$ DTD, amplifying the rate by a
 factor of~$Z^\gamma$ where the metallicity~$Z$ is computed from the
 \citet{Zahid2014} MZR.
 Because these calculations are simply using the~\um~SFHs, the results are
-unaffected by the SMF dependence of the observational estimates.
+unaffected by the SMF dependence of the observational estimates (i.e.,
+Eq.~\ref{eq:specia} can simply be divided by~$\mstar$ as opposed to an integral
+over the SMF).
 % While the observationally inferred scaling with stellar mass is significantly
 % dependent upon the assumed SMF~\citep{Gandhi2022}, we emphasize that this
 % theoretical approach is independent of the SMF because we are computing the

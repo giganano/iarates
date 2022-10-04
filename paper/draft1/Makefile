@@ -15,7 +15,6 @@ ms.pdf: ms.tex ms.bib *.pdf $(TEXSOURCES)
 clean:
 	@ rm -f ms.pdf
 	@ rm -f *.aux
-	@ rm -f *.bbl
 	@ rm -f *.blg
 	@ rm -f *.log
 	@ rm -f *.out

@@ -1,5 +1,5 @@
 
-\documentclass[ms.tex]{subfiles}
+\documentclass[foo.tex]{subfiles}
 \begin{document}
 
 \section{Discussion and Conclusions}
@@ -8,7 +8,7 @@
 % fig 5
 \begin{figure*}
 \centering
-\includegraphics[scale = 0.47]{onezone_application.pdf}
+\includegraphics[scale = 0.46]{onezone_application.pdf}
 \caption{
 A comparison of one-zone galactic chemical evolution models based on
 \citet[][for details, see their~\S~2]{Johnson2020} with ($\gamma = -0.5$,
@@ -32,7 +32,7 @@ To explain this scaling with mass, we use the mean SFHs of galaxies predicted
 by the~\um~\citep{Behroozi2019} semi-analytic model of galaxy formation, a
 standard~$\tau^{-1}$ DTD~\citep[e.g.,][]{Maoz2012a}, and the empirical MZR as
 parametrized by~\citet{Zahid2014} to relate stellar mass to metallicity and
-build-in a~$Z^\gamma$ dependence.
+build-in a~$Z^\gamma$ SN Ia rate dependence.
 Our results depend only on the shape of the MZR and not its absolute
 calibration.
 While lower mass galaxies have younger stellar populations, we find that this
@@ -76,7 +76,7 @@ the~$\sim$1 decade in metallicity spanned by~$\mstar = 10^{7.2} - 10^{10}
 \msun$ galaxies.
 The suggestion by~\citet{Kistler2013} that the increased WD mass at low
 metallicities drives the effect is likely a subdominant effect.
-High mass WDs at low~$Z$ may be an important component if the
+Higher mass WDs for lower metallicity may be an important component if the
 steeper~$\sim \mstar^{-0.5}$ scaling inferred with the~\citet{Bell2003} SMF is
 correct.
 \par
@@ -129,15 +129,18 @@ at~$z \approx 1$.
 \par
 A metallicity dependence of~$Z^{-0.5}$ strongly impacts the evolution of Fe
 in one-zone models of galactic chemical evolution.
-For a given choice of model parameters, the only regions of chemical space
-where~$\gamma = 0$ and~$\gamma = -0.5$ make similar predictions is at
-near-Solar abundances and along the high [O/Fe] plateau.
-This indicates that best-fit values obtained from fitting one-zone models to
-abundances could be significantly impacted by the inclusion of
-metallicity-dependent SN Ia rates.
+% For a given choice of model parameters, the only regions of chemical space
+% where~$\gamma = 0$ and~$\gamma = -0.5$ make similar predictions is at
+% near-Solar abundances and along the high [O/Fe] plateau.
+The considerable impact that a~$\gamma = -0.5$ scaling has on the predictions
+indicates that evolutionary parameters inferred from one-zone model fits to
+multi-element abundance ratios may need revised.
+% This indicates that best-fit values obtained from fitting one-zone models to
+% abundances could be significantly impacted by the inclusion of
+% metallicity-dependent SN Ia rates.
 The strongest impact is for dwarf galaxies, where the abundances are low and
-the higher yields can shift the endpoint of the evolutionary track by~$\sim$0.5
-dex.
+the higher yields predict substantial shifts in the position of the
+evolutionary track in abundance space.
 % The calculations we have presented here are simplified in several regards.
 % First, we have assumed the characteristic SFH predicted by a semi-analytic
 % model of galaxy formation at all stellar masses.
