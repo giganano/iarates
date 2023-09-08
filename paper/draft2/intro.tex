@@ -1,0 +1,106 @@
+
+\documentclass[foo.tex]{subfiles}
+\begin{document}
+
+\section{Introduction}
+\label{sec:intro}
+
+Type Ia supernovae (SNe Ia) arise from the thermonuclear detonation of a white
+dwarf~\citep[WD;][]{Hoyle1960, Colgate1969}, the exposed carbon-oxygen core of
+a low-mass star.
+SN surveys have revealed that low-mass galaxies are more efficient producers
+of these events than their higher mass counterparts~\citep[e.g.,][]{Mannucci2005,
+Sullivan2006, Li2011, Smith2012}.
+In particular,~\citet{Brown2019} found that the specific SN Ia rate -- the rate
+per unit stellar mass -- scales approximately with the inverse square root of
+the stellar mass itself ($\dot{\text{N}}_\text{Ia} / \mstar \sim \mstar^{-0.5}$)
+using SNe Ia from the All-Sky Automated Survey for Supernovae
+\citep[ASAS-SN;][]{Shappee2014, Kochanek2017} and assuming the~\citet{Bell2003}
+stellar mass function (SMF).
+The measurement depends on the SMF because the number of
+observed SNe must be normalized by the number of galaxies in order to compute a
+specific SN rate.
+Consequently, the scaling becomes shallower ($\dot{\text{N}}_\text{Ia} / \mstar
+\sim \mstar^{-0.3}$) when using the steeper~\citet{Baldry2012} double-Schechter
+SMF parametrization~\citep{Gandhi2022}.
+This change leads to agreement between the ASAS-SN measurements and Wiseman et
+al.'s~\citeyearpar{Wiseman2021} estimates from the Dark Energy
+Survey~\citep[DES;][]{DES2016} using 
+{\color{red}
+their own measurements of the SMF, which closely agree with the
+\citet{Baldry2012} SMF.
+}
+% the~\citet{Baldry2012} SMF.
+Although the exact strength of the scaling depends on the SMF, it is clear
+that the specific SN Ia rate is higher in dwarf galaxies.
+There are a handful of potential pathways that could give rise to this
+empirical result.
+\par
+First, the mean star formation histories (SFHs) of galaxies vary with the
+stellar mass of the system.
+In semi-analytic models of galaxy formation (see, e.g., the reviews of
+\citealt{Baugh2006} and~\citealt{Somerville2015a}), dwarf galaxies in the field
+have more extended SFHs than their higher mass counterparts.
+This mass dependence is also seen in hydrodynamical simulations of galaxy
+formation~\citep[e.g.,][]{GarrisonKimmel2019}.
+Since SN Ia delay-time distributions (DTDs) decline with age
+\citep[e.g.,][]{Greggio2005, Maoz2012a}, galaxies with more recent star
+formation should have higher specific SN Ia rates.
+\par
+Second,~\citet{Kistler2013} argued that the dependence of the specific SN Ia
+rate on stellar mass may be driven by metallicity.
+Lower mass galaxies host lower metallicity stellar populations
+\citep{Gallazzi2005, Kirby2013, Simon2019} and lower metallicity gas reservoirs
+(\citealp{Tremonti2004};~\citealp*{Zahid2011};~\citealp{Andrews2013,
+Zahid2014}).
+\citet{Kistler2013} point out that lower metallicity stars leave behind higher
+mass WDs which could potentially grow to the Chandrasekhar mass and
+subsequently explode more easily than their less massive, high metallicity
+counterparts.
+Lower metallicity stars have weaker winds during the asymptotic giant branch
+phase~\citep{Willson2000, Marigo2007}, leading to lower mass loss rates and
+more massive cores~\citep{Kalirai2014}, producing more massive WDs for fixed
+initial mass stars at lower metallcity (\citealp{Umeda1999};
+\citealp*{Meng2008};~\citealp{Zhao2012}).
+\par
+Furthermore, in both the single~\citep[e.g.,][]{Whelan1973} and double
+degenerate scenarios (e.g.,~\mbox{\citealp{Iben1984}};
+\mbox{\citealp{Webbink1984}}), SNe Ia arise in binary systems.
+Based on multiplicity measurements of Solar-type stars from the Apache Point
+Observatory Galaxy Evolution Experiment~\citep[APOGEE;][]{Majewski2017},
+\citet{Badenes2018} and~\citet*{Moe2019} find that the stellar close binary
+fraction increases toward low metallicities.
+% in APOGEE\footnote{
+% 	Apache Point Observatory Galaxy Evolution Experiment
+% }~\citep{Majewski2017},~\citet*{Moe2019} found that the stellar close binary
+% fraction increases from~$\sim$10\% at~$\sim$$3Z_\odot$ where~$Z_\odot$ is the
+% Solar metallicity to~$\sim$40\% at~$\sim$$0.1 Z_\odot$.
+Consequently, dwarf galaxies should have more potential SN Ia progenitors per
+unit mass of star formation due to more massive WDs and a higher close binary
+fraction.
+Motivated by these results,~\citet{Gandhi2022} explore a handful of
+parametrizations for the metallicity dependence of the SN Ia rate in
+re-simulated galaxies from FIRE-2~\citep{Hopkins2018}.
+They find that a~$Z^{-0.5}$ scaling where~$Z$ is the metallicity leads
+to better agreement with the empirical relationship between galactic stellar
+masses and stellar abundances than when using metallicity-independent SN Ia
+rates.
+\par
+In this paper, we assume that the strong scaling of the specific SN Ia rate
+with stellar mass is due to metallicity and conduct simple numerical
+calculations to investigate its origin.
+We combine the mean star formation histories of galaxies at fixed stellar
+mass from the~\um~semi-analytic model~\citep{Behroozi2019} and the popular
+$\tau^{-1}$ SN Ia DTD~\citep[e.g.,][]{Maoz2012a} with the mass-metallicity
+relation (MZR) for galaxies~\citep{Tremonti2004, Andrews2013, Zahid2011,
+Zahid2014}.
+Given the mean SFH and DTD, we can compute the characteristic SN Ia rate for
+galaxies of a given stellar mass, and by assuming that they lie along the
+observed MZR, we can include various scalings of the rate with metallicity.
+We describe the model in~\S~\ref{sec:galprops} and the effect on Type Ia rates
+in~\S~\ref{sec:predictions}.
+In~\S~\ref{sec:gce} we present simple models exploring the consequences of
+metallicity-dependent SN Ia rates for galactic chemical evolution models.
+We summarize our findings in~\S~\ref{sec:conclusions}.
+
+\end{document}
