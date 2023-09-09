@@ -85,6 +85,13 @@ require a stronger scaling of roughly~$\gamma \approx -1.5$.
 \par
 In the right panel of Fig.~\ref{fig:specia_metdep}, we compare the same
 scalings to the close binary fractions in APOGEE measured by~\citet{Moe2019}.
+{\color{red}
+We have additionally marked~\citeauthor{Moe2019}'s~\citeyearpar{Moe2019}
+measurement of the binary fraction in the most metal-poor stars
+([Fe/H]~$\approx -3$), a point above which one would naturally expect the
+metallicity dependence of the SN Ia rate to flatten off if binarity is the
+primary driver.
+}
 The line at~$Z \approx 10^{-0.6} Z_\odot$ is the characteristic abundance of
 an~$\mstar = 10^{7.2}~\msun$ galaxy in the~\citet{Zahid2014} parametrization.
 For the range of metallicities spanned by the stellar masses we explore here,
@@ -99,12 +106,25 @@ as suggested by~\citet{Andrews2013}, then there is a slight tension between a
 $\gamma = -0.5$ scaling and the close binary fraction measured by
 \citet{Moe2019}.
 {\color{red}
-We have additionally marked~\citeauthor{Moe2019}'s~\citeyearpar{Moe2019}
-measurement of the binary fraction in the most metal-poor stars
-([Fe/H]~$\approx -3$), a point above which one would naturally expect the
-metallicity dependence of the SN Ia rate to flatten off if binarity is the
-primary driver.
+That is, although the normalization of the MZR does not impact our predicted
+scaling of the specific SN Ia rate with stellar mass, it does impact whether or
+not binarity can explain the effect across the full range of metallicities.
+In particular, the stellar MZR has a lower normalization
+\citep[e.g.,][]{Gallazzi2005, Kirby2013, Simon2019}, reaching [Fe/H]~$\approx
+-1$ at~$\sim$$2\times10^8 \msun$, suggesting instead that the role of binarity
+may be small in the~$\sim$$10^7 - 10^8 \msun$ range.
 }
+
+
+% {\color{red}
+% We have additionally marked~\citeauthor{Moe2019}'s~\citeyearpar{Moe2019}
+% measurement of the binary fraction in the most metal-poor stars
+% ([Fe/H]~$\approx -3$), a point above which one would naturally expect the
+% metallicity dependence of the SN Ia rate to flatten off if binarity is the
+% primary driver.
+% We also note that the normalization of the MZR does impact whether or not this
+% $Z^{-0.5}$ scaling 
+% }
 \par
 There is some additional freedom to adjust the metallicity dependence beyond
 that of binaries, so the agreement need not be perfect.
@@ -206,6 +226,24 @@ All distributions are normalized to a maximum value of 1.
 }
 \label{fig:hostmassdist}
 \end{figure}
+
+% fig 5
+\begin{figure*}
+\centering
+\includegraphics[scale = 0.46]{onezone_application.pdf}
+\caption{
+A comparison of one-zone galactic chemical evolution models based on
+\citet[][for details, see their~\S~2]{Johnson2020} with ($\gamma = -0.5$,
+solid) and without ($\gamma = 0$, dotted) metallicity-dependent SN Ia rates.
+Tracks denote the O and Fe abundances in the interstellar medium parametrized
+as a function of time with points marked at~$T = 2$, 4, 6, 8, and 10 Gyr.
+Insets illustrate [O/H] and [Fe/H] as a function of time in Gyr for the
+corresponding model.
+We note on each panel the choice of the outflow mass-loading factor~$\eta$ and
+the star formation efficiency timescale~$\tau_\star$.
+}
+\label{fig:onezone_app}
+\end{figure*}
 
 While empirical measurements of the specific SN Ia rate as a function of
 stellar mass depend on the assumed SMF~\citep{Gandhi2022}, the host galaxy

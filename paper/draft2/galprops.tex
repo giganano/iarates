@@ -55,7 +55,10 @@ simulations allows merger trees down to~$\mstar = 10^{7.2}~\msun$ to be
 obtained directly from the simulations.
 Conveniently, this limit is approximately the lowest mass for which there are
 empirical constraints on the specific SN Ia rate from ASAS-SN~\citep{Brown2019}
-and DES~\citep{Wiseman2021}.
+and DES~\citep{Wiseman2021}%
+{\color{red}%
+, though one source of uncertainty is that~\um's constraints on SFHs at these
+masses involve significant extrapolation.}
 To relate these predictions to data from the untargeted ASAS-SN
 survey~\citep{Shappee2014, Kochanek2017}, we take the full galaxy
 sample from~\um, including both star forming and quenched galaxies as
@@ -139,10 +142,20 @@ scaling~$Z(\mstar)^\gamma$ where~$Z$ is given by the MZR.
 In detail, the WDs producing SNe Ia come from stellar populations with a
 distribution of metallicities, and therefore a more accurate parametrization
 would marginalize~$Z(M_\star)^\gamma$ over each galaxy's enrichment history.
-We retain the simplified parametrization of equation~\refp{eq:specia} as
-accounting for distributions in metallicity would require folding in some sort
-of galactic chemical evolution model (see, e.g.,~\S~\ref{sec:gce} below or the
-review by~\citealp{Matteucci2021}).
+% Although~\um~incorporates a parameterization of~$Z$ as a function of redshift
+% and stellar mass from~\citep{Maiolino2008}, this form is similarly shaped as
+% \citet{Andrews2013} and~\citet{Zahid2014}, so any differences introduced should
+% be minimal.
+The inferred rates would be higher if one were to account for this effect, but
+the event rate in low-mass field galaxies should be dominated by young stellar
+populations anyway due to their tendency to form at low redshift combined with
+the steep nature of the SN Ia DTD.
+Accounting for distributions in metallicity can be addressed by either
+including an MZR that evolves with redshift inside the integral or folding in
+some sort of galactic chemical evolution (GCE) model (see,
+e.g.,~\S~\ref{sec:gce} below or the review by~\citealp{Matteucci2021}).
+% Although~\um~incorporates a parametrization of~$Z$ as a function of redshift
+% and stellar mass, 
 }
 We are only interested in the scaling of the rates with~\mstar, so we normalize
 all rates to unity at~$\mstar = 10^{10}~\msun$ following~\citet{Brown2019}.
@@ -203,6 +216,11 @@ lower plateau but otherwise a similar slope and turnover mass.
 Because we simply normalize the rates to unity at~$\mstar = 10^{10}~\msun$,
 only the shape of the MZR matters, and we find similar results using both
 parametrizations.
+{\color{red}
+We note that~\um~does include the parameterization of metallicities as a
+function of stellar mass and redshift from~\citet{Maiolino2008}, though it is
+also similar in shape to~\citet{Andrews2013} and~\citet{Zahid2014}.
+}
 % We find similar results in~\S~\ref{sec:predictions} below using both
 % parametrizations because, following~\citet{Brown2019}, we quantify the specific
 % SN Ia rate as a function of stellar mass normalized to 1 at
@@ -221,12 +239,16 @@ We then compute the specific SN Ia rate according to equation~\refp{eq:specia}
 given the implied SFH and and a~$\tau^{-1}$ DTD, amplifying the rate by a
 factor of~$Z^\gamma$ where the metallicity~$Z$ is computed from the
 \citet{Zahid2014} MZR.
-Because these calculations are simply using the~\um~SFHs, the results are
-unaffected by the SMF dependence of the observational estimates (i.e.,
+Because these calculations are simply using the~\um~SFHs,
+{\color{red} our predictions}
+are unaffected by the SMF dependence of the observational estimates (i.e.,
 Eq.~\ref{eq:specia} can simply be divided by~$\mstar$ as opposed to an integral
 over the SMF).
 {\color{red}
-However, the~\um~SFHs and its predicted SMF are closely related as well.
+However, the~\um~SFHs are still dependent on the~\citet{Baldry2012} SMF,
+because they use this form as an empirical constraint at~$z = 0$.
+In detail, comparing our predictions to scalings of the SN Ia rate with mass
+derived from different SMFs requires a different set of SFHs.
 }
 \par
 {\color{red}
@@ -239,9 +261,9 @@ as the connection between binarity, metallicity, and SN rates is relatively new
 in the literature, and the measurements carry substantial uncertainties.
 Nonetheless, it is noteworthy that our MZR uses O as its tracer while
 \citeauthor{Moe2019}'s~\citeyearpar{Moe2019} multiplicity measurements use Fe.
-To add to the complication, other MZRs in the literature find stronger
-differences in the shape than~\citet{Andrews2013} and~\citet{Zahid2014} at the
-low mass end~\citep[see, e.g., the review by][]{Kewley2019}.
+To add to the complication, there are other MZRs in the literature that have
+different shapes at the low-mass end than~\citet{Andrews2013}
+and~\citet{Zahid2014} (see, e.g., the review by~\citealp{Kewley2019}).
 Binarity also appears to be a function of both [Fe/H] and [$\alpha$/Fe]
 \citep{Mazzola2020}, and the measurements themselves are rather challenging
 (see, e.g.,~\citealp{Moe2017} and the recent review by~\citealp{Offner2022}).
